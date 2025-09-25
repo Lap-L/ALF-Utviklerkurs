@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+div p {
+  font-family: arial;
+  font-weight: italic;
+  font-size: 15px;
+}
+
+a:hover {
+  color: red;
+}
+
+h1::before {
+  stroke-linecap: round;
+}

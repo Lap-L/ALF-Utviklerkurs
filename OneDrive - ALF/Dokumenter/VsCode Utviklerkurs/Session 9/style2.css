@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+
+a:hover {
+  color: red;
+}
+--------------------
+dl li {
+    
+    list-style-image: url("fa-regular fa-star");
+}
+-------------------
+dl li:nth-child(odd) {
+  background-color: rgb(153, 225, 153);
+}

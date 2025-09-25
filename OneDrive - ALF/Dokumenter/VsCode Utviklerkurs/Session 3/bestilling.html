@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="/Session 3/favicon.ico">
+<title>Bestilling</title>
+<nav>
+	<ul>
+		<li> <a href="index.html"> Hjemmeside </a> </li>
+		<li> <a href="om_oss.html"> Om Oss </a> </li>
+        <li> <a href="registrering.html"> Registrering </a> </li>
+		<li> <a href="bestilling.html"> Bestilling </a> </li>
+	</ul>
+</nav>
+
+
+
+</head>
+<hr>
+<h1>Bestilling</h1>
+<hr>
+
+
+<body>
+
+<form action="/action_page.php">
+
+    <p>Hvor reiser du fra?</p>
+
+    <label for="Hvor">Sted:</label>
+    <select>
+        <option value="Bergen">Bergen</option>
+        <option value="London">London</option>
+        <option value="New York">New York</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Amsterdam">Amsterdam</option>
+        <option value="Moscow">Moscow</option>
+        <option value="Stockholm">Stockholm</option>
+    </select>
+
+    <p>Hvor vil du reise?</p>
+
+    <label for="Hvor">Sted:</label>
+    <select>
+        <option value="Bergen">Bergen</option>
+        <option value="London">London</option>
+        <option value="New York">New York</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Amsterdam">Amsterdam</option>
+        <option value="Moscow">Moscow</option>
+        <option value="Stockholm">Stockholm</option>
+    </select>
+
+   
+
+    <p>Utreise dato</p>
+    <input type ="date" required><br>
+
+    <p>Hjemreise dato</p>
+    <input type ="date" required><br><br>
+
+
+  <label for="selskap">Flyselskap:</label>
+    <select>
+        <option value="En">En</option>
+        <option value="To">To</option>
+        <option value="Tre">Tre</option>
+        <option value="Fire">Fire</option>
+        <option value="Fem">Fem</option>
+        <option value="Seks">Seks</option>
+    </select>
+    <br><br>
+  
+
+<br>
+
+
+<label for="number">Antall billetter:</label><br>
+  <input type="number" id="number" name="number" value="number"><br>
+  
+<br>
+<label for="billett">Billett type:</label><br>
+  <input type="radio" id="number" name="number" value="number">Barn<br>
+  <input type="radio" id="number" name="number" value="number">Voksen<br>
+  <input type="radio" id="number" name="number" value="number">Honnør<br>
+  
+  <br> <label for="Pris">Prisnivå:</label><br>
+    <select>
+        <option value="Billig">Billig billett</option>
+        <option value="Flex">Flex billett</option>
+        <option value="Super">Super flex</option>
+         </select>
+
+  <br><br>
+
+<label for="nyhet">Vil du bli registrert for nyhetsbrev?:</label><br>
+  <input type="checkbox" id="Ja" name="Ja" value="Ja">Ja<br>
+  <input type="checkbox" id="Nei" name="Nei" value="Nei">Nei<br>
+
+<br>
+
+
+  <input type="Submit" value="Bestill">
+  
+  
+  </form>
+</body>
+</html>
+

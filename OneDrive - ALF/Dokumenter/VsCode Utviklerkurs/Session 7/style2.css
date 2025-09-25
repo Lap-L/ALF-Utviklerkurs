@@ -1,0 +1,37 @@
+* {
+  font-style: italic;
+}
+
+.profile h1 {
+  background-color: lightcyan;
+  padding: 15px;
+}
+
+.profile h1 {
+  color: blue;
+}
+
+#user-name {
+  color: purple;
+}
+
+.bio p {
+  font-size: 14px;
+}
+
+h2 + p {
+  color: green
+  }
+
+input[type="email"] {
+        border-color: blue;
+	}
+
+    .bio p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+button:hover {
+  border-color: red;
+
+}

@@ -1,0 +1,14 @@
+head, body {
+  color: blue;
+}
+
+* {
+  color: blue;
+  text-align: center;
+  font-size: 18px;
+}
+
+p {
+  font-family: verdana;
+  font-size: 18px;
+}

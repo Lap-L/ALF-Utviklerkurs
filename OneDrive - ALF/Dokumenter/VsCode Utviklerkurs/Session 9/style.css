@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+div p {
+  font-family: arial;
+  font-style: italic;
+  font-size: 15px;
+}
+
+a:hover {
+  color: red;
+}
+
+h1::before {
+  stroke-linecap: round;
+}

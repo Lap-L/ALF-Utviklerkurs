@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+a:hover {
+  color: red;
+}
+
+input[type="email"] {
+  border-color:blue
+}
+
+input:focus{
+  background-color:pink
+}
+
+
+input:nth-child(even) {
+  background-color: rgb(134, 151, 134);
+}
+
+form {
+  border-style: solid; border-width: 2px;
+  padding: 10px;
+}
+
+input:hover {
+  color: red;
+}
+
+#button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: italic;
+  padding: 5px;
+  background-color: antiquewhite;
+  font-size: 16px;
+  border-style: ridge; border-width: 2px;
+}
+
+#button::after {
+  stroke-linecap: round;
+}

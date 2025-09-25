@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+div p {
+  font-family: arial;
+  font-weight: italic;
+  font-size: 15px;
+}
+
+a:hover {
+  color: red;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  
+  margin:auto
+  
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+  border-style: ridge; border-width: 2px;
+  margin:auto
+}
+
+table td p {
+  float: right;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(134, 151, 134);
+}
+
+tr:hover {
+  color: red;
+}
+
+table td p::before {
+  content: ":)";
+}

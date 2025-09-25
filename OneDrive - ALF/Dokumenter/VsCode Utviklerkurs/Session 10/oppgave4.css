@@ -1,0 +1,16 @@
+.container {
+  border-style: solid; border-width: 2px;
+  
+  
+}
+
+#boks2 {
+  position: sticky;
+  left: 90%;
+  bottom: 100%;
+}
+
+#boks1 {
+  position: fixed;
+  
+}

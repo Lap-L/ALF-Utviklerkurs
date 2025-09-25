@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+a:hover {
+  color: red;
+}
+
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+  border-style: ridge; border-width: 8px;
+  box-shadow: 1px, 1px, 3px, #345454;
+}
+
+table tr td p {
+  float: right;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+}
+
+table td:hover {
+  border: 5px solid #b30e0e;
+}
+
+table td p:after {
+  content: "";
+}
+
+td:nth-child(odd) {
+  background-color: rgb(153, 225, 153);
+}
+
+#person2 {
+  background-color: rgb(153, 164, 225);
+  font-size: 20px;
+  
+}

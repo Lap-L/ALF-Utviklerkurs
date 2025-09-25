@@ -1,0 +1,12 @@
+#boks2 {
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+
+#boks3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+

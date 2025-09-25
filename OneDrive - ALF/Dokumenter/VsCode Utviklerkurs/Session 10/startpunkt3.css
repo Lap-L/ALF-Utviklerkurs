@@ -1,0 +1,50 @@
+.boks {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  margin: 20px;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid #333;
+}
+.en { background: lightcoral; }
+.to { background: lightgreen; }
+.tre { background: lightgoldenrodyellow; }
+.fire { background: lightcoral; }
+.fem { background: lightgreen; }
+.seks { background: lightgoldenrodyellow; }
+
+.to { 
+    
+    position: relative;
+    bottom: 122px;
+    left: 105px;
+}
+
+.tre { 
+    
+    position: relative;
+    bottom: 244px;
+    left: 210px;
+}
+
+.fire { 
+    
+    position: relative;
+    bottom: 366px;
+    left: 315px;
+}
+
+.fem { 
+    
+    position: relative;
+    bottom: 488px;
+    left: 420px;
+}
+
+.seks { 
+    
+    position: relative;
+    bottom: 610px;
+    left: 535px;
+}
