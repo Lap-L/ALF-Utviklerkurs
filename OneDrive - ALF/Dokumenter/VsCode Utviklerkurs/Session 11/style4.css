@@ -12,12 +12,16 @@
   background-position: center;
 }
 
-.div2 {
-  width: 25%;
+p {
+  line-height: 1.5em;
   
 }
 
-.heading {
-  font-size: 1rem + 2vw
-  
-}
+input[type="button"] { 
+  font-size: clamp(1rem, 3vw, 2rem); 
+  padding: calc(0.5em + 1vh);
+} 
+
+input:hover { 
+  color: red;
+} 

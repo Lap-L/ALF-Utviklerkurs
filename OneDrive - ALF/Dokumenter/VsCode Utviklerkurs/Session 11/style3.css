@@ -1,11 +1,11 @@
 .div1 {
-  width: 100%-60px;
+  width: calc(100%-60px);
   height: 50vmax;
   
 }
 
 .div2 {
-  width: 100%-60px;
+  width: calc(25% - 50px);
   
 }
 
@@ -15,6 +15,6 @@
 }
 
 .heading {
-  font-size: 1rem + 2vw
+  font-size: calc(1rem + 2vw)
   
 }
