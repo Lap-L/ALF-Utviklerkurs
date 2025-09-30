@@ -33,9 +33,19 @@ input[type="button"] {
 
 .container {
   width: 80%;
+  margin: auto;
+}
+
+
+.section1 {
+  height: 10vh;
   
 }
 
+#sfish {
+  height: 10vh;
+  
+}
 #Denmark:hover {
   right: -20px;
   top: -25px;
