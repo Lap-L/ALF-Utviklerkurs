@@ -10,10 +10,8 @@ p {
   
 }
 
-#Norway {
-  position: sticky;
-  top: 0;
-  right: 0;
+div {
+  font-size: 2em;
 }
 
 #Denmark {
