@@ -7,3 +7,10 @@ p {
   font-size: 5vw;
   
 }
+
+div {
+  width: 50vmin;
+  height: 50vmax;
+  
+}
+
