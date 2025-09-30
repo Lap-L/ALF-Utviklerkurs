@@ -1,12 +1,15 @@
-.div1 {
-  width: 100%-60px;
-  height: 50vmax;
+.container {
+  padding: 2em;
+  max-width: 1200px;
   
 }
 
-.div2 {
-  width: 100%-60px;
-  
+.hero {
+  height: 90vh;
+  min-height: 600px;
+  background-image: url(https://facts.net/wp-content/uploads/2023/07/pufferfish-cute--730x487.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .div2 {
