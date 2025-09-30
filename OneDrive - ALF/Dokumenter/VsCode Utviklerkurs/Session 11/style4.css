@@ -25,3 +25,18 @@ input[type="button"] {
 input:hover { 
   color: red;
 } 
+
+.gcontainer { 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  padding-left: 1rem;
+} 
+
+.item { 
+  background-color: lightgreen;
+  padding: 1rem;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+} 
