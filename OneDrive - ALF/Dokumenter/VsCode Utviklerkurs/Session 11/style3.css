@@ -6,15 +6,11 @@
 
 .div2 {
   width: 100%-60px;
-  min-width: 300px;
-}
-
-.flag {
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
   
 }
 
-
+.div2 {
+  width: 25%;
+  
+}
 
