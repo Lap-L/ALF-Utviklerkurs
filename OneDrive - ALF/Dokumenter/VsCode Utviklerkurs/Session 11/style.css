@@ -20,13 +20,8 @@ input[type="button"] {
   
 }
 
-table {
-  position: absolute;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
-  border-style: solid; border-width: 2px;
-  padding: 10px;
-  right: 0%;
+#div2 {
+  width: 0.5em;
 }
 
 #Denmark:hover {
