@@ -26,6 +26,11 @@ input[type="button"] {
   
 }
 
+#norge {
+  max-width: 100%;
+  
+}
+
 #Denmark:hover {
   right: -20px;
   top: -25px;
