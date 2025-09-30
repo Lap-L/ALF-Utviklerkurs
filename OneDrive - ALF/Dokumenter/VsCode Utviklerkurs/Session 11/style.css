@@ -13,7 +13,7 @@ p {
 
 div {
   font-size: 2em;
-  width: 50%;
+  
 }
 
 input[type="button"] {
@@ -21,7 +21,10 @@ input[type="button"] {
   
 }
 
-
+#div2 {
+  width: 50%;
+  
+}
 
 #Denmark:hover {
   right: -20px;
