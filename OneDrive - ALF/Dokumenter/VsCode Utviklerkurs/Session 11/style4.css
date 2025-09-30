@@ -39,4 +39,5 @@ input:hover {
   text-align: center;
   width: 80%;
   max-width: 800px;
+  max-height: fit-content;
 } 
