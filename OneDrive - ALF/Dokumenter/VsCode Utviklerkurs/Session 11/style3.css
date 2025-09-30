@@ -1,0 +1,24 @@
+.div1 {
+  width: 50vmin;
+  height: 50vmax;
+  
+}
+
+.div2 {
+  text-align: center;
+  width: 50%;
+  min-width: 300px;
+}
+
+.flag {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  
+}
+
+input[type="button"] { 
+  font-size: clamp(1rem, 3vw, 2rem); 
+  
+} 
+
