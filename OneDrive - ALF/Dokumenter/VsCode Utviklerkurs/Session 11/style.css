@@ -14,12 +14,9 @@ div {
   font-size: 2em;
 }
 
-#Denmark {
-  position: relative;
-  right: -15px;
-  bottom: -30px;
+input[type="button"] {
+  font-size: 1.5em;
   
-  z-index: 0;
 }
 
 table {
