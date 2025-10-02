@@ -20,7 +20,7 @@
 } 
 
 
-#Denmark:hover {
+.flag:hover {
   right: -20px;
   top: -25px;
   position: relative;
