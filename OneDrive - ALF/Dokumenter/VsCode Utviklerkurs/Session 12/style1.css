@@ -9,6 +9,12 @@
 .container { 
   width: 1000px;
   height: 1000px;
+  text-align: center;
+} 
+
+.flag { 
+  width: 12%;
+  
  
 } 
 
