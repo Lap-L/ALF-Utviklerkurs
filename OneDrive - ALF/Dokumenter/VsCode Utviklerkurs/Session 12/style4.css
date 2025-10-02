@@ -11,7 +11,7 @@
   border: solid;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   row-gap: 10px;
   
@@ -27,9 +27,26 @@
   
 } 
 
+.two { 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  
+} 
+
+.three { 
+  position: relative;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  
+} 
+
 .flag{ 
   
-  width: 50%;
+  width: 75%;
   padding: 10px;
   
 } 
@@ -47,7 +64,7 @@
 } 
 
 
-#norge:hover, .flag:hover {
+.flag:hover {
   right: -20px;
   top: -25px;
   position: relative;
