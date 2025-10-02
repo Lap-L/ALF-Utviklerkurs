@@ -4,42 +4,46 @@
 }
 
 
-header { 
-  
+.container { 
+  text-align: center;
   border: solid;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  grid-template-columns: 1fr 2fr;
+  justify-content: flex-start;
   flex-wrap: wrap;
- 
+  row-gap: 10px;
   
 } 
 
-#norge { 
+.nor { 
   position: relative;
-  width: 15%;
-  padding: 10px;
-  
-  
-} 
-
-.one { 
-  position: relative;
+  width: 48%;
   align-items: flex-start;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-self: center;
   
 } 
 
-h1 { 
-  text-align: left; 
+.flag { 
+  position: relative;
+  width: 48%;
+  padding: 10px;
   
 } 
- 
 
-/* LOL */ 
+.sve { 
+  position: relative;
+  width: 48%;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  
+} 
 
-#norge:hover {
+
+#norge:hover, .flag:hover {
   right: -20px;
   top: -25px;
   position: relative;
@@ -48,9 +52,4 @@ h1 {
   
 }
 
-li:hover, h1:hover {
-  position: relative;
-  border-style: solid; border-width: 2px;
-  border-color: red;
-  
-}
+
