@@ -7,20 +7,18 @@
 header { 
   
   border: solid;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  
  
   
 } 
 
 
-.on { 
+.list { 
   position: relative;
   align-items: flex-start;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
   
 } 
 
