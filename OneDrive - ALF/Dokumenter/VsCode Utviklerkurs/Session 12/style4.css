@@ -17,9 +17,9 @@
   
 } 
 
-.no { 
+.one { 
   position: relative;
-  width: 48%;
+  width: 150px;
   align-items: flex-start;
   display: flex;
   justify-content: center;
@@ -27,9 +27,9 @@
   
 } 
 
-.fla{ 
+.flag{ 
   
-  width: 20%;
+  width: 50%;
   padding: 10px;
   
 } 
