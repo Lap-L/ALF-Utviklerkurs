@@ -11,20 +11,28 @@
   height: 1000px;
   text-align: center;
   border: solid;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  justify-content: flex-end; 
+  
+} 
+
+#norge { 
+  
+  width: 12%;
+  padding: 10px;
+  
 } 
 
 .flag { 
-  display: grid;
-  gap: 1rem;
-  padding: 1rem;
-  justify-content: space-around; 
+  
   width: 12%;
   padding: 10px;
   
 } 
 
 
-.flag:hover {
+#norge:hover, .flag:hover {
   right: -20px;
   top: -25px;
   position: relative;
