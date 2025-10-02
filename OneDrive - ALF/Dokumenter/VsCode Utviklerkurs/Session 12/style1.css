@@ -14,9 +14,13 @@
 } 
 
 .flag { 
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-around; 
   width: 12%;
   padding: 10px;
- 
+  
 } 
 
 
