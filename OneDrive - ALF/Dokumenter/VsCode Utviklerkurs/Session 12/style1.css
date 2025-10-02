@@ -11,23 +11,44 @@
   height: 1000px;
   text-align: center;
   border: solid;
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  justify-content: flex-end; 
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 2fr;
+  justify-content: flex-start;
+ 
   
 } 
 
 #norge { 
-  
-  width: 12%;
+  position: relative;
+  width: 48%;
   padding: 10px;
+  
+  
+} 
+
+.nor { 
+  position: relative;
+  width: 48%;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-end;
   
 } 
 
 .flag { 
-  
-  width: 12%;
+  position: relative;
+  width: 48%;
   padding: 10px;
+  
+} 
+
+.sve { 
+  position: relative;
+  width: 48%;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
   
 } 
 
