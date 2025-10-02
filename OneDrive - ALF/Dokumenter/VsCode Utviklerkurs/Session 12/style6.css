@@ -1,0 +1,49 @@
+* {
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+header { 
+  
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+  
+} 
+
+
+.on { 
+  position: relative;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  
+} 
+
+h { 
+  text-align: left; 
+  
+} 
+ 
+
+/* LOL */ 
+
+#norge:hover {
+  right: -20px;
+  top: -25px;
+  position: relative;
+  border-style: solid; border-width: 2px;
+  border-color: blue;
+  
+}
+
+li:hover, h1:hover {
+  position: relative;
+  border-style: solid; border-width: 2px;
+  border-color: red;
+  
+}
