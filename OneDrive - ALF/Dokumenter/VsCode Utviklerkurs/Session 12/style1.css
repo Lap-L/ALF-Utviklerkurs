@@ -10,11 +10,12 @@
   width: 1000px;
   height: 1000px;
   text-align: center;
+  border: solid;
 } 
 
 .flag { 
   width: 12%;
-  
+  padding: 10px;
  
 } 
 
