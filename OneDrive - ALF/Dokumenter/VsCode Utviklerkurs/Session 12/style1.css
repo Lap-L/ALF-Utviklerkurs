@@ -1,0 +1,58 @@
+
+
+* {
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  font-size: 20px;
+  padding: 10px;
+  
+}
+
+.div1 { 
+  font-size: 2em; 
+ 
+} 
+
+input[type="button"] { 
+  font-size: 1.5em; 
+  
+} 
+
+.div2 {
+  width: 50em;
+  
+}
+
+#norge {
+  max-width: 100%;
+  
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+
+.section1 {
+  height: 10vh;
+  
+}
+
+#sfish {
+  height: 10vh;
+  
+}
+#Denmark:hover {
+  right: -20px;
+  top: -25px;
+  position: relative;
+  border-style: solid; border-width: 2px;
+  border-color: blue;
+  
+}
+
+
