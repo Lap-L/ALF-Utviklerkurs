@@ -3,10 +3,8 @@
   --primary-color: white; 
 }
 
-@media (max-width:768px) { 
-   .container1, .cards, .items { 
-    display: flex;
-    flex-direction: column;
+@media (max-width:1000px) { 
+   * { 
   
   flex-wrap: wrap;
   
@@ -81,14 +79,13 @@ h2 {
 } 
 
 .items { 
-    height: 200px;
+    height: 250px;
     width: 1000px;
  border: solid;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: var(--primary-bg-color);
     
 } 
 
