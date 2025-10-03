@@ -1,3 +1,8 @@
+:root {
+  --primary-bg-color: rgb(158, 75, 236); /* global scope */
+  --primary-color: white; 
+}
+
 
 .container1 { 
   
@@ -6,7 +11,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: rgb(158, 75, 236);
+  background-color: var(--primary-bg-color);
  
   
 } 
@@ -16,7 +21,7 @@
   position: relative;
   align-items: center;
   display: flex;
-  color: white;
+  color: var(--primary-color);
   justify-content: space-evenly;
   padding: 5px;
   font-weight: bold;
@@ -35,7 +40,7 @@ a {
   padding: 5px;
   font-weight: bold;
   font-size: 20px;
-  color: white
+  color: var(--primary-color);
 } 
 
 @media (max-width:1000px) { 
