@@ -62,6 +62,8 @@ a {
   justify-content: space-between;
   
   background-color:rgb(124, 80, 211);
+
+  
   
 } 
 
@@ -117,6 +119,7 @@ a {
   background-color:var(--primary-bg-color);
   color: var(--primary-color);
   
+  
 } 
 
 .container3 { 
@@ -129,6 +132,8 @@ a {
   border: solid;
   border-width: 15px;
   border-color: var(--primary-bg-color);
+  border-radius: 25px;
+  
   
 } 
 
@@ -137,6 +142,7 @@ a {
   flex-direction: row;
   justify-content: flex-end;
   align-self: flex-start;
+  align-items: center;
   text-align: center;
   
 } 
@@ -161,6 +167,7 @@ a {
   border: solid;
   border-width: 15px;
   border-color: var(--primary-bg-color);
+  border-radius: 25px;
 } 
 
 .Tricky { 
@@ -192,6 +199,7 @@ a {
   border: solid;
   border-width: 15px;
   border-color: var(--primary-bg-color);
+  border-radius: 25px;
 
 } 
 
@@ -226,14 +234,15 @@ a {
   
 }
 
-.flavor:hover {
+/*
+.flavo:hover {
   position: relative;
   border-style: solid; border-width: 2px;
   color: black;
   border-color: red;
   
 }
-
+*/
 a:hover, h1:hover {
   position: relative;
   border-style: solid; border-width: 2px;
