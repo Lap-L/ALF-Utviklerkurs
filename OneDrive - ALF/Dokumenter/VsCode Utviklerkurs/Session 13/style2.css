@@ -13,11 +13,11 @@
 
 .container1 { 
   
-  border: solid;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  
   background-color: var(--primary-bg-color);
  
   
@@ -56,11 +56,11 @@ a {
 
 .container2 { 
   height: 350px;
-  border: solid;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  
   background-color:rgb(124, 80, 211);
   
 } 
@@ -108,10 +108,11 @@ a {
 
 .bottom { 
   height: 350px;
-  border: solid;
+  
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-self: flex-start;
   
   background-color:var(--primary-bg-color);
   color: var(--primary-color);
@@ -120,12 +121,29 @@ a {
 
 .container3 { 
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  background-color: rgb(124, 80, 211);
+  height: 200px;
+  border: solid;
+  border-width: 15px;
+  border-color: var(--primary-bg-color);
   
 } 
 
 .alignment { 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-start;
+  text-align: center;
+  
+} 
+
+.aflavor { 
+    border: solid;
+    border-color: rgb(124, 80, 211);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -133,27 +151,89 @@ a {
   
 } 
 
+.container4 { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  background-color: rgb(124, 80, 211);
+  height: 200px;
+  border: solid;
+  border-width: 15px;
+  border-color: var(--primary-bg-color);
+} 
+
+.Tricky { 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-start;
+  text-align: center;
+  
+} 
+
+.tflavor { 
+    border: solid;
+    border-color: rgb(124, 80, 211);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: flex-start;
+  
+} 
+
+.container5 { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  background-color: rgb(124, 80, 211);
+  height: 200px;
+  border: solid;
+  border-width: 15px;
+  border-color: var(--primary-bg-color);
+
+} 
+
+.Responsive { 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-start;
+  text-align: center;
+  
+} 
+
+.rflavor { 
+    border: solid;
+    border-color: rgb(124, 80, 211);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: flex-start;
+  
+} 
 
 /* LOL */ 
 
-/*.card1:hover, .card2:hover, .card3:hover {
+.container3:hover, .container4:hover, .container5:hover {
   right: -10px;
   top: -15px;
   position: relative;
-  border-style: solid; border-width: 2px;
-  border-color: blue;
-  background-color: antiquewhite;
+  border-style: ridge; border-width: 2px;
+  border-color: red;
+  
   
 }
-*/
-/*.flavor:hover {
+
+.flavor:hover {
   position: relative;
   border-style: solid; border-width: 2px;
   color: black;
   border-color: red;
   
 }
-*/
+
 a:hover, h1:hover {
   position: relative;
   border-style: solid; border-width: 2px;

@@ -4,8 +4,8 @@
 }
 
 @media (max-width:768px) { 
-   .container1, .cards, .items { 
-    display: flex;
+   .items { 
+    
     flex-direction: column;
   
   flex-wrap: wrap;
@@ -81,10 +81,11 @@ h2 {
 } 
 
 .items { 
-    height: 200px;
+    display: flex;
+    height: 1200px;
     width: 1000px;
  border: solid;
-  display: flex;
+  
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
