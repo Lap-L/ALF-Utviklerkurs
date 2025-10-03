@@ -62,7 +62,6 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color:rgb(124, 80, 211);
- 
   
 } 
 
@@ -106,19 +105,32 @@ a {
   
 } 
 
-.hus { 
-  position: relative;
+
+.bottom { 
+  height: 350px;
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+  background-color:var(--primary-bg-color);
+  color: var(--primary-color);
   
 } 
 
-h2 { 
-  position: relative;
+.container3 { 
   display: flex;
-  color: black;
+  flex-direction: row;
+  justify-content: space-around;
   
+} 
+
+.alignment { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: flex-start;
   
-  padding: 5px;
-  font-weight: bold;
 } 
 
 
