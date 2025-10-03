@@ -23,7 +23,6 @@
   
 } 
 
-
 .flex1 { 
   position: relative;
   align-items: center;
@@ -50,12 +49,66 @@ a {
   color: var(--primary-color);
 } 
 
+.container2 { 
+    font-weight: normal;
+    
+} 
 
+.container2 { 
+  height: 350px;
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color:rgb(124, 80, 211);
+ 
+  
+} 
 
-.flag { 
+.title1 { 
   position: relative;
-  width: 15%;
-  padding: 10px;
+  align-items: flex-end;
+  display: flex;
+  color: var(--primary-color);
+  justify-content: flex-start;
+  font-size: 45px;
+  font-weight: bold;
+  
+} 
+
+.flavor { 
+  position: relative;
+  align-items: flex-start;
+  display: flex;
+  color: var(--primary-color);
+  justify-content: center;
+  padding: 20px;
+  
+} 
+
+.card1 { 
+    width: 600px;
+    color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+} 
+
+.card2 { 
+    width: 500px;
+    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+} 
+
+.hus { 
+  position: relative;
+  
 } 
 
 h2 { 
@@ -68,36 +121,10 @@ h2 {
   font-weight: bold;
 } 
 
-.cards { 
-    font-weight: bold;
-    
-} 
-
-.flavor { 
-    color: white;
-    
-} 
-
-.items { 
-    height: 250px;
-    width: 1000px;
- border: solid;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-    
-} 
-
-.flags { 
-  position: relative;
-  width: 85%;
-  padding: 5px;
-} 
 
 /* LOL */ 
 
-.card1:hover, .card2:hover, .card3:hover {
+/*.card1:hover, .card2:hover, .card3:hover {
   right: -10px;
   top: -15px;
   position: relative;
@@ -106,15 +133,15 @@ h2 {
   background-color: antiquewhite;
   
 }
-
-.flavor:hover {
+*/
+/*.flavor:hover {
   position: relative;
   border-style: solid; border-width: 2px;
   color: black;
   border-color: red;
   
 }
-
+*/
 a:hover, h1:hover {
   position: relative;
   border-style: solid; border-width: 2px;
