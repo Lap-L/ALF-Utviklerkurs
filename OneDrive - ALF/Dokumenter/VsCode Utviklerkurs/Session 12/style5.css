@@ -3,7 +3,7 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+@media (max-width:800px) { 
 .container { 
   width: 1000px;
   height: 1000px;
@@ -15,20 +15,17 @@
   align-self: center;
   flex-wrap: wrap;
   row-gap: 10px;
-  
+  }
 } 
 
 .flag{ 
   
   width: 15%;
   padding: 10px;
-  flex-wrap: wrap;
+  
 } 
 
-.p { 
-  
-  flex-wrap: wrap;
-} 
+
 
 
 .one { 

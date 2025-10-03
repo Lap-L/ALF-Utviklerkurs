@@ -38,6 +38,16 @@ a {
   color: white
 } 
 
+@media (max-width:1000px) { 
+   .container1 { 
+  position: relative;
+  width: 15%;
+  padding: 10px;
+  flex-wrap: wrap;
+  
+  } 
+} 
+
 #norge { 
   position: relative;
   width: 15%;
