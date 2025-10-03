@@ -1,61 +1,35 @@
 
-
-* {
-  font-style: italic;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-.container { 
-  width: 1000px;
-  height: 1000px;
-  text-align: center;
+header { 
+  
   border: solid;
   display: flex;
-  flex-direction: column;
-  grid-template-columns: 1fr 2fr;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 10px;
+ 
   
 } 
 
 #norge { 
   position: relative;
-  width: 48%;
+  width: 15%;
   padding: 10px;
   
   
 } 
 
-.nor { 
+.one { 
   position: relative;
-  width: 48%;
   align-items: flex-start;
   display: flex;
-  justify-content: flex-end;
-  align-self: flex-start;
-  
-} 
-
-.flag { 
-  position: relative;
-  width: 48%;
-  padding: 10px;
-  
-} 
-
-.sve { 
-  position: relative;
-  width: 48%;
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   
 } 
 
 
-#norge:hover, .flag:hover {
+/* LOL */ 
+
+#norge:hover {
   right: -20px;
   top: -25px;
   position: relative;
@@ -64,4 +38,9 @@
   
 }
 
-
+li:hover, h1:hover {
+  position: relative;
+  border-style: solid; border-width: 2px;
+  border-color: red;
+  
+}
