@@ -265,7 +265,7 @@ to {
   position: relative;
   border-style: ridge; border-width: 2px;
   border-color: red;
-  animation: enlarge 5s infinite;
+  animation: enlarge 2s infinite;
 }
 
 @keyframes enlarge{
@@ -278,7 +278,7 @@ from {
 to {
   /* */
   width: 200%;
-  height: 300%;
+  height: 200%;
 }
 
 }
