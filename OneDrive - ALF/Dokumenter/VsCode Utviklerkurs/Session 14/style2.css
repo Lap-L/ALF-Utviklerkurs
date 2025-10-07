@@ -51,7 +51,7 @@ a {
   text-decoration: none;
   padding: 5px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 20px;  
   color: var(--primary-color);
 } 
 
@@ -88,14 +88,17 @@ a {
 @keyframes slide{
 from {
   /* */
-  transform: translate(300px);
+  transform: translate(200px);
+  
+  
 
 }
 
 to {
   /* */
-  transform: rotatey(50deg);
+  transform: rotateY(50deg);
   opacity: 50%;
+  
 }
 
 }
@@ -128,6 +131,7 @@ to {
   flex-direction: row;
   justify-content: space-around;
   animation: spin 1s infinite;
+  
 } 
 
 @keyframes spin{
@@ -260,38 +264,38 @@ to {
 
 /* LOL */ 
 
-.container3:hover, .container4:hover, .container5:hover {
+.container3:hover, .container4:hover, .container5:hover, .flex1:active{
   right: -10px;
   top: -15px;
   position: relative;
   border-style: ridge; border-width: 2px;
   border-color: red;
-  animation: enlarge 2s infinite;
+  animation: enlarge 1s infinite;
+  animation-direction: alternate;
+  animation-timing-function: steps(10);
 }
 
 @keyframes enlarge{
 from {
   /* */
   width: 80%;
+  
 
 }
 
 to {
   /* */
-  width: 200%;
-  height: 200%;
+  scale: 1.2;
+  box-shadow: 100px, 100px, 500px yellow;
 }
 
 }
 /*
-.flavo:hover {
-  position: relative;
-  border-style: solid; border-width: 2px;
-  color: black;
-  border-color: red;
-  
-}
+
 */
+
+
+
 a:hover, h1:hover {
   position: relative;
   border-style: solid; border-width: 2px;
