@@ -3,26 +3,15 @@
   --primary-color: white; 
 }
 
-@media (max-width:768px) { 
-   .items { 
-    
-    flex-direction: column;
-  
-  flex-wrap: wrap;
-  
-  } 
-} 
+
 
 .container1 { 
-  
   border: solid;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--primary-bg-color);
- 
-  
 } 
 
 
@@ -55,7 +44,7 @@ a {
 
 
 .flag { 
-  position: relative;
+  /* position: relative; */
   width: 15%;
   padding: 10px;
 } 
@@ -82,13 +71,18 @@ h2 {
 
 .items { 
     display: flex;
-    height: 1200px;
-    width: 1000px;
- border: solid;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* Bruk relativ størrelse her i stedet for absolutt, så endrer den seg sammen med vinduet */
+    /* height: 1200px;
+    width: 1000px; */
+    width: 100%;
+    height:auto;
+
+    border: solid;
   
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    
   background-color: var(--primary-bg-color);
     
 } 
@@ -125,3 +119,9 @@ a:hover, h1:hover {
   border-color: red;
   
 }
+
+@media (max-width:768px) { 
+   .items { 
+    flex-direction: column;
+  } 
+} 
