@@ -4,6 +4,14 @@
 }
 
 
+/*
+transform: translate(50px, 0px) ---Displacement
+transform: rotateXYZ(360deg) ---Rotate along given axis
+transform: scale(1.5) ---Increase-decdrease size based on scaling
+transform: skewxyz(120deg) ---squish
+
+*/
+
 
 .container1 {
   --scrollbar-track-color: rgb(217, 7, 7); 

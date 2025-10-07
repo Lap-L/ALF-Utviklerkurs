@@ -81,20 +81,20 @@ a {
   justify-content: flex-start;
   font-size: 45px;
   font-weight: bold;
-  animation: slide 3s infinite;
+  animation: slide 2s infinite;
   
 } 
 
 @keyframes slide{
 from {
   /* */
-  margin-left: 100%;
+  transform: translate(300px);
 
 }
 
 to {
   /* */
-  margin-left: 0%;
+  
 }
 
 }
