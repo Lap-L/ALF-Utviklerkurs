@@ -94,7 +94,8 @@ from {
 
 to {
   /* */
-  
+  transform: rotatey(50deg);
+  opacity: 50%;
 }
 
 }
