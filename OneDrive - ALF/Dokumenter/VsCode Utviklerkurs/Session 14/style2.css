@@ -3,7 +3,19 @@
   --primary-color: white; 
 }
 
+@property --property {
+  syntax: "blue";
+  inherits: false;
+  initial-value: var(--scrollbar-track-color);
+}
 
+
+
+.container1 {
+  --scrollbar-track-color: rgb(217, 7, 7); 
+  background-color: var(--scrollbar-track-color);
+  
+}
 
 .container1 { 
   
@@ -73,10 +85,11 @@ a {
 } 
 
 .flavor { 
-  
+  --ms-scrollbar-track-color:bisque;
+
   align-items: flex-start;
   display: flex;
-  color: var(--primary-color);
+  color: var(--ms-scrollbar-track-color);
   justify-content: center;
   padding: 20px;
   

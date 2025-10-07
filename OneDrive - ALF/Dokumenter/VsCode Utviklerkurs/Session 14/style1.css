@@ -3,249 +3,56 @@
   --primary-color: white; 
 }
 
-@media (max-width:1000px) { 
-   * { 
+
+
+.container1 {
+  --scrollbar-track-color: rgb(217, 7, 7); 
+  background-color: var(--scrollbar-track-color);
   
-  flex-wrap: wrap;
+}
+
+.card1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
+}
+
+.card2 {
+  font-family: oswald;
+}
+
+.card3 {
+  font-family: ;
+}
+
+@property --property {
+  syntax: "blue";
+  inherits: false;
+  initial-value: var(--scrollbar-track-color);
+}
+
+
+@keyframes spin{
+from {
+  /* */
+  margin-left: 0%;
+  color: blue;
+  width: 200px;
+
+
+}
+
+to {
+  /* */
+  margin-left: 100%;
+  transform: rotate(720deg);
+
+
+}
+
+}
+
+@media (max-width:768px) { 
+   .cards { 
+    flex-direction: column;
   } 
 } 
-
-.container1 { 
-  
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-  background-color: var(--primary-bg-color);
- 
-  
-} 
-
-.flex1 { 
-  position: relative;
-  align-items: center;
-  display: flex;
-  color: var(--primary-color);
-  justify-content: space-evenly;
-  padding: 5px;
-  font-weight: bold;
-} 
-
-.nav { 
-  position: relative;
-  align-items: center;
-  display: flex;
-  
-} 
-
-a { 
-  justify-content: space-evenly;
-  text-decoration: none;
-  padding: 5px;
-  font-weight: bold;
-  font-size: 20px;
-  color: var(--primary-color);
-} 
-
-.container2 { 
-    font-weight: normal;
-    
-} 
-
-.container2 { 
-  height: 350px;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-  background-color:rgb(124, 80, 211);
-
-  
-  
-} 
-
-.title1 { 
-  position: relative;
-  align-items: flex-end;
-  display: flex;
-  color: var(--primary-color);
-  justify-content: flex-start;
-  font-size: 45px;
-  font-weight: bold;
-  
-} 
-
-.flavor { 
-  position: relative;
-  align-items: flex-start;
-  display: flex;
-  color: var(--primary-color);
-  justify-content: center;
-  padding: 20px;
-  
-} 
-
-.card1 { 
-    width: 600px;
-    color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  
-} 
-
-.card2 { 
-    width: 500px;
-    
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  
-} 
-
-
-.bottom { 
-  height: 350px;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: flex-start;
-  
-  background-color:var(--primary-bg-color);
-  color: var(--primary-color);
-  
-  
-} 
-
-.container3 { 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: center;
-  background-color: rgb(124, 80, 211);
-  height: 200px;
-  border: solid;
-  border-width: 15px;
-  border-color: var(--primary-bg-color);
-  border-radius: 25px;
-  
-  
-} 
-
-.alignment { 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-self: flex-start;
-  align-items: center;
-  text-align: center;
-  
-} 
-
-.aflavor { 
-    border: solid;
-    border-color: rgb(124, 80, 211);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: flex-start;
-  
-} 
-
-.container4 { 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: center;
-  background-color: rgb(124, 80, 211);
-  height: 200px;
-  border: solid;
-  border-width: 15px;
-  border-color: var(--primary-bg-color);
-  border-radius: 25px;
-} 
-
-.Tricky { 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-self: flex-start;
-  text-align: center;
-  
-} 
-
-.tflavor { 
-    border: solid;
-    border-color: rgb(124, 80, 211);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: flex-start;
-  
-} 
-
-.container5 { 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: center;
-  background-color: rgb(124, 80, 211);
-  height: 200px;
-  border: solid;
-  border-width: 15px;
-  border-color: var(--primary-bg-color);
-  border-radius: 25px;
-
-} 
-
-.Responsive { 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-self: flex-start;
-  text-align: center;
-  
-} 
-
-.rflavor { 
-    border: solid;
-    border-color: rgb(124, 80, 211);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: flex-start;
-  
-} 
-
-
-
-.container3:hover, .container4:hover, .container5:hover {
-  right: -10px;
-  top: -15px;
-  position: relative;
-  border-style: ridge; border-width: 2px;
-  border-color: red;
-  
-  
-}
-
-/*
-.flavo:hover {
-  position: relative;
-  border-style: solid; border-width: 2px;
-  color: black;
-  border-color: red;
-  
-}
-*/
-a:hover, h1:hover {
-  position: relative;
-  border-style: solid; border-width: 2px;
-  border-color: red;
-  
-}
