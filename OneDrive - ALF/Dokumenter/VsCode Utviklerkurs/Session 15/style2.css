@@ -1,38 +1,84 @@
-.parallax { 
-    
-  background-image: url('Flag_of_Denmark.svg');
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+:root {
+  --primary-bg-color: rgb(158, 75, 236); /* global scope */
+  --primary-color: white; 
+}
 
+.bottom { 
+  height: 500px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: flex-start;
+  
+  background-color:var(--primary-bg-color);
+  color: var(--primary-color);
+  
+} 
+
+.container3 { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  background-color: rgb(124, 80, 211);
+  height: 400px;
+  border: solid;
+  border-width: 15px;
+  border-color: var(--primary-bg-color);
+  border-radius: 25px;
   
   
 } 
 
-.parallax2 { 
+.alignment { 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-start;
+  align-items: center;
+  text-align: center;
   
-  background-image: url('Flag_of_Sweden.svg');
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+} 
 
+#pict { 
+  text-align: center;
+  padding-right: 100px;
   
   
 } 
 
-.parallax3 { 
-    
-  background-image: url('fish.gif');
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  
+.aflavor { 
+    border: solid;
+    border-color: rgb(124, 80, 211);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: flex-start;
   
 } 
+
+.container3:hover{
+  position: relative;
+  border-style: ridge; border-width: 2px;
+  border-color: red;
+  animation: enlarge 1s infinite;
+  animation-direction: alternate;
+  animation-timing-function: 
+}
+
+@keyframes enlarge{
+from {
+  /* */
+  
+  
+
+}
+
+to {
+  /* */
+  scale: 1.1;
+  box-shadow: 100px, 100px, 500px yellow;
+}
+
+}
