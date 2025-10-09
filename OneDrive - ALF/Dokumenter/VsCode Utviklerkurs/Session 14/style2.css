@@ -272,7 +272,7 @@ to {
   border-color: red;
   animation: enlarge 1s infinite;
   animation-direction: alternate;
-  animation-timing-function: steps(10);
+  animation-timing-function: 
 }
 
 @keyframes enlarge{
