@@ -213,7 +213,7 @@ a:hover, h1:hover {
   } 
 } 
 
-@media (500px <= width <= 600px ) { 
+@media (480px <= width <= 768px ) { 
   
   
   .item2 {
@@ -223,7 +223,7 @@ a:hover, h1:hover {
   
 } 
 
-@media (601px <= width <= 800px ) { 
+@media (768px <= width <= 1024px ) { 
   
   
   .item1 {
@@ -233,7 +233,7 @@ a:hover, h1:hover {
   
 } 
 
-@media (801px <= width <= 1000px ) { 
+@media (1024px <= width <= 1536px ) { 
   
   
   .item5 {
