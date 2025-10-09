@@ -1,0 +1,38 @@
+.parallax { 
+    
+  background-image: url('Flag_of_Denmark.svg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+  
+} 
+
+.parallax2 { 
+  
+  background-image: url('Flag_of_Sweden.svg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+  
+} 
+
+.parallax3 { 
+    
+  background-image: url('fish.gif');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+  
+} 
