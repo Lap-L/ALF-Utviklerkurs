@@ -150,8 +150,9 @@ to {
 }
 
 .container {
-  display: grid;
+  display: flex;
   grid-template-columns: auto auto auto;
+  justify-content: center;
   background-color: dodgerblue;
   padding: 10px;
 
@@ -205,40 +206,14 @@ a:hover, h1:hover {
   
 }
 
-@media (max-width:1000px) { 
-   * { 
+
+@media (400px <= width <= 1200px ) { 
   
+  
+  .container {
   flex-wrap: wrap;
-  
-  } 
-} 
-
-@media (480px <= width <= 768px ) { 
-  
-  
-  .item2 {
-  grid-area: 2 / 1 / span 2 / span 3;
 }
   
   
 } 
 
-@media (768px <= width <= 1024px ) { 
-  
-  
-  .item1 {
-  grid-area: 3 / 2 / span 2 / span 3;
-}
-  
-  
-} 
-
-@media (1024px <= width <= 1536px ) { 
-  
-  
-  .item5 {
-  grid-area: 1 / 2 / span 2 / span 3;
-}
-  
-  
-} 
