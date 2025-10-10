@@ -56,27 +56,25 @@
   grid-area: item5;
 }
 
-/*.item6 {
+.item6 {
   display: grid;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: ;
+  grid-area: item6;
 }
 
 .item7 {
   display: grid;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: ;
+  grid-area: item7;
 }
 
 .item8 {
   display: grid;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: ;
+  grid-area: item8;
 }
-*/
+
+.item9 {
+  display: grid;
+  grid-area: item9;
+}
 
 
 
