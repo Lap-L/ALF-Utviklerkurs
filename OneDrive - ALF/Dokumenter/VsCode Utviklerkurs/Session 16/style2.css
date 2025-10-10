@@ -18,11 +18,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: dodgerblue;
   padding: 10px;
-  /*grid-template-areas: 
-  'item1 item1 item1'
-  'item2 item3 item4'
-  'item5 item6 item7'
-  'item8 item9 item9' ;*/
+  grid-template-areas: 
+  'item1 item1 item2 item3'
+  'item4 item5 item5 item3' ;
 }
 .container > div {
   background-color: #f1f1f1;
@@ -34,42 +32,28 @@
 
 .item1 {
   display: grid;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-area: item1;
 }
 
 .item2 {
   display: grid;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-area: item2;
 
 }
 
 .item3 {
   display: grid;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-area: item3;
 }
 
 .item4 {
   display: grid;
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-column-end: ;
+  grid-area: item4;
 }
 
 .item5 {
   display: grid;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-area: item5;
 }
 
 /*.item6 {
