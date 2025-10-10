@@ -15,12 +15,14 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: dodgerblue;
   padding: 10px;
   grid-template-areas: 
-  'item1 item1 item2 item3'
-  'item4 item5 item5 item3' ;
+  'item1 item2 item3'
+  'item1 item4 item5'
+  'item1 item6 item7'
+  'item1 item8 item9' ;
 }
 .container > div {
   background-color: #f1f1f1;
