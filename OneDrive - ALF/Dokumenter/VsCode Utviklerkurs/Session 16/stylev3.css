@@ -18,6 +18,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   background-color: dodgerblue;
   padding: 10px;
+  gap: 5px;
   grid-template-areas: 
   'item1 item1 item1'
   'item2 item3 item4'
