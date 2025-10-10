@@ -1,0 +1,164 @@
+:root {
+  --primary-bg-color: rgb(158, 75, 236); /* global scope */
+  --primary-color: white; 
+}
+
+@property --property {
+  syntax: "blue";
+  inherits: false;
+  initial-value: var(--scrollbar-track-color);
+}
+
+
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: dodgerblue;
+  padding: 10px;
+  /*grid-template-areas: 
+  'item1 item1 item1'
+  'item2 item3 item4'
+  'item5 item6 item7'
+  'item8 item9 item9' ;*/
+}
+.container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item1 {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item2 {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+}
+
+.item3 {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.item4 {
+  display: grid;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: ;
+}
+
+.item5 {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+/*.item6 {
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: ;
+}
+
+.item7 {
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: ;
+}
+
+.item8 {
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: ;
+}
+*/
+
+
+
+/* LOL */ 
+
+.container3:hover, .container4:hover, .container5:hover, .flex1:active, .item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover, .item7:hover, .item8:hover, .item9:hover {
+  position: relative;
+  border-style: ridge; border-width: 2px;
+  border-color: red;
+  animation: enlarge 1s infinite;
+  animation-direction: alternate;
+  animation-timing-function: 
+}
+
+@keyframes enlarge{
+from {
+  /* */
+
+}
+
+to {
+  /* */
+  scale: 1.1;
+  box-shadow: 100px, 100px, 500px yellow;
+}
+
+}
+/*
+
+*/
+
+
+
+a:hover, h1:hover {
+  position: relative;
+  border-style: solid; border-width: 2px;
+  border-color: red;
+  
+}
+
+@media (500px <= width <= 600px ) { 
+  
+  
+  .item2 {
+  grid-area: 2 / 1 / span 2 / span 3;
+}
+  
+  
+} 
+
+@media (601px <= width <= 800px ) { 
+  
+  
+  .item1 {
+  grid-area: 3 / 2 / span 2 / span 3;
+}
+  
+  
+} 
+
+@media (801px <= width <= 1000px ) { 
+  
+  
+  .item5 {
+  grid-area: 1 / 2 / span 2 / span 3;
+}
+  
+  
+} 
