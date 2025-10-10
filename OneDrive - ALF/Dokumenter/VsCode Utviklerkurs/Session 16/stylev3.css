@@ -37,6 +37,7 @@
 .item1 {
   display: grid;
   grid-area: item1;
+  border-radius: 25px;
 }
 
 .item2 {
