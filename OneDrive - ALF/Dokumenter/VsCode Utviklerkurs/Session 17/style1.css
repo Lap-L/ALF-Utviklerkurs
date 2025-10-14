@@ -232,32 +232,3 @@ a:hover, h1:hover {
   
 }
 
-@media (500px <= width <= 600px ) { 
-  
-  
-  .item2 {
-  grid-area: 2 / 1 / span 2 / span 3;
-}
-  
-  
-} 
-
-@media (601px <= width <= 800px ) { 
-  
-  
-  .item1 {
-  grid-area: 3 / 2 / span 2 / span 3;
-}
-  
-  
-} 
-
-@media (801px <= width <= 1000px ) { 
-  
-  
-  .item5 {
-  grid-area: 1 / 2 / span 2 / span 3;
-}
-  
-  
-} 
