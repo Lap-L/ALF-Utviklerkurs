@@ -36,15 +36,26 @@
   'item16 item10 item11 item12'
   'item17 item18 item19 item12';
   
+  /*width: 650px;
+  border-radius: 25px;
+  */
+  
 }
 .container > div {
-  
+  display: flex;
   border: 1px solid black;
   padding: 10px;
   font-size: 30px;
   text-align: center;
-  
+  align-items: center;
+  justify-content: space-around;
+
+  /*height: 80%;
+  width: 85%;
+  */
 }
+
+
 
 .item1 {
   display: grid;
@@ -224,6 +235,24 @@ to {
   border-style: ridge; border-width: 2px;
   border-color: rgb(76, 0, 255);
   border-width: 5px;
+  animation: jump 0.05s;
+}
+
+@keyframes jump{
+from {
+  /* */
+  transform: translatey(0%);
+  transform: rotatex('10deg');
+
+}
+
+to {
+  /* */
+  transform: translatey(-100%);
+  transform: rotatex('120deg');
+  
+}
+
 }
 
 a:hover, h1:hover {
@@ -232,32 +261,3 @@ a:hover, h1:hover {
   
 }
 
-@media (500px <= width <= 600px ) { 
-  
-  
-  .item2 {
-  grid-area: 2 / 1 / span 2 / span 3;
-}
-  
-  
-} 
-
-@media (601px <= width <= 800px ) { 
-  
-  
-  .item1 {
-  grid-area: 3 / 2 / span 2 / span 3;
-}
-  
-  
-} 
-
-@media (801px <= width <= 1000px ) { 
-  
-  
-  .item5 {
-  grid-area: 1 / 2 / span 2 / span 3;
-}
-  
-  
-} 
