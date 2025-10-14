@@ -23,6 +23,21 @@
 
 }
 
+.display {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: italic;
+  padding: 50px;
+  background-color: rgb(200, 12, 25);
+  color: aqua;
+  font-size: 32px;
+  text-align: center;
+  border-style: ridge; border-width: 2px;
+  width: 50%;
+  margin-bottom: 10px;
+  border-radius: 25px;
+
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

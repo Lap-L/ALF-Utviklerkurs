@@ -19,9 +19,24 @@
 
 <form>
 
-<input type="Submit" value="Calculate" class="submit" >
+<input type="Submit" value="Calculate" class="submit" id="sub" >
 
 </form>
+
+<div class="container2">
+  <div class="display"><h3>Numbers will show up here</h3>
+    </div>
+     </div>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementByID("sub").innerHTML = "Paragraph changed.";
+}
+</script>
 
 <div class="container">
   <div class="item1"><h3>1</h3>
