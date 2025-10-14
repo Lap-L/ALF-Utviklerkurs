@@ -13,7 +13,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: italic;
   padding: 50px;
-  background-color: rgb(34, 33, 31);
+  background-color: rgb(200, 12, 25);
   color: aqua;
   font-size: 32px;
   border-style: ridge; border-width: 2px;
@@ -26,7 +26,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: rgb(214, 61, 105);
+  background-color: rgb(214, 150, 61);
   padding: 10px;
   gap: 30px;
   grid-template-areas: 
@@ -130,7 +130,7 @@
   grid-area: item12;
   border-radius: 25px;
   color: white;
-  background-color: black;
+  background-color: rgb(71, 206, 230);
 }
 
 .item13 {
