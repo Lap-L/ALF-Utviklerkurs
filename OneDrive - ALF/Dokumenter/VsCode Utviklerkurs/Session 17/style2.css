@@ -40,7 +40,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 4 * 1fr;
   background-color: rgb(214, 150, 61);
   padding: 10px;
   gap: 30px;
@@ -69,7 +69,6 @@
   width: 85%;
   */
 }
-
 
 
 .item1 {
