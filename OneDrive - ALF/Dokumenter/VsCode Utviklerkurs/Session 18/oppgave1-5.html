@@ -183,9 +183,22 @@ function style4() {
     
 </script>
 
+<h2>Oppgave 6</h2>
 
 
 
+<input type="text" id="myInput" oninput="myFunction()">
+
+<h1 id="field"></h1>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("myInput").value;
+  document.getElementById("field").innerHTML =  text;
+}
+</script>
+
+<br><br>
 </body>
 
 </html>
