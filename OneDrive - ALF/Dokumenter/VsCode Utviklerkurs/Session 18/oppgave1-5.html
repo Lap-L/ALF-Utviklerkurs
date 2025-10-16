@@ -18,7 +18,7 @@
 
 <p></p>
 
-<p id="demo">oppgave 1</p>
+<p id="demo">oppgave 1 + 2</p>
 
 <script>
 let a = 5
@@ -78,7 +78,7 @@ console.log(a * b)
 
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, neque!</p>
 
-<img src="Fish.gif" id="img">
+<img src="Fish.gif" id="img" height="200px" ><br>
 
 <button type="button" onclick="button1()"><div class="item10"><h3>pic1</h3>
     </div></button>
@@ -121,67 +121,70 @@ function button3(){
 
 -----
 
+<h1 id="color1">Style1</h1>
 
 
 
-<form>
+<button type="button" onclick="style1()"><div class="item10"><h3>Change style1</h3>
+    </div></button>
+<br>
 
-<input type="Submit" value="Calculate" class="submit" >
+<script>
 
-</form>
+function style1() {
+    document.getElementById("color1").style.color = "#ff0000";
 
-<div class="container">
-  <div class="item1"><h3>1</h3>
-    </div>
-    <div class="item2"><h3>2</h3>
-     </div>
-    <div class="item3"><h3>3</h3>
-     </div>
-    <div class="item4"><h3>4</h3>
-     </div>
-    <div class="item5"><h3>5</h3>
-     </div>
-    <div class="item6"><h3>6</h3>
-     </div>
-    <div class="item7"><h3>7</h3>
-    </div>
-    <div class="item8"><h3>8</h3>
-     </div>
-    <div class="item9"><h3>9</h3>
-     </div>
-     <div class="item10"><h3>0</h3>
-     </div>
-     <div class="item11"><h3>,</h3>
-     </div>
-     <div class="item12"><h3>=</h3>
-     </div>
-     <div class="item13"><h3>+</h3>
-     </div>
-     <div class="item14"><h3>-</h3>
-     </div>
-     <div class="item15"><h3>X</h3>
-     </div>
-     <div class="item16"><h3>/</h3>
-     </div>
-     <div class="item17"><h3>(</h3>
-     </div>
-     <div class="item18"><h3>)</h3>
-     </div>
-     <div class="item19"><h3>C</h3>
-     </div>
-     
-     
+}
     
+</script>
+
+<h2  id="color2">Style2</h2>
+
+<button type="button" onclick="style2()"><div class="item10"><h3>Change style1</h3>
+    </div></button>
+<br>
+
+<script>
+
+function style2() {
+    document.getElementById("color2").style.color = "blue";
+
+}
     
+</script>
 
-</div>
-        </div>
+<h3  id="color3">Style3</h3>
 
+<button type="button" onclick="style3()"><div class="item10"><h3>Change style1</h3>
+    </div></button>
+<br>
 
+<script>
+
+function style3() {
+    document.getElementById("color3").style.color = "red";
+
+}
     
-<img src="Flag_of_Norway.svg" id="img1">
-<img src="Flag_of_Denmark.svg" id="img2">
-<img src="Flag_of_Sweden.svg" id="img3">
+</script>
+
+<h4  id="color4">Style4</h4>
+
+<button type="button" onclick="style4()"><div class="item10"><h3>Change style1</h3>
+    </div></button>
+<br>
+
+<script>
+
+function style4() {
+    document.getElementById("color4").style.color = "yellow";
+
+}
+    
+</script>
+
+
+
 
 </body>
 
