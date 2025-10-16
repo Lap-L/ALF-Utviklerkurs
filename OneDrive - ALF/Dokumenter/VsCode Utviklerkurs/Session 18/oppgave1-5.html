@@ -18,7 +18,7 @@
 
 <p></p>
 
-<p id="demo"></p>
+<p id="demo">oppgave 1</p>
 
 <script>
 let a = 5
@@ -31,8 +31,20 @@ document.getElementById("demo").innerHTML = "The value of e is " + e;
 console.log(a * b)
 </script>
 
+<button onclick="butt()";>Oppgave2</button>
+<p id="dem"></p>
 
+<script>
 
+    function butt() {
+        let navn, farge;
+        navn= prompt("Skriv inn navn");
+        farge= prompt("Skriv inn farge");
+        nf = navn + farge
+        document.getElementById("dem").innerHTML = "Mitt navn er, " + navn + "Jeg liker best " + farge + "-farger";
+}
+
+</script>
 
 <form>
 
