@@ -40,11 +40,89 @@ console.log(a * b)
         let navn, farge;
         navn= prompt("Skriv inn navn");
         farge= prompt("Skriv inn farge");
-        nf = navn + farge
+        
         document.getElementById("dem").innerHTML = "Mitt navn er, " + navn + "Jeg liker best " + farge + "-farger";
 }
 
 </script>
+
+
+<button onclick="oppgave3()">
+        
+        <div class="item10">
+                <h3>Oppgave3</h3>
+        </div>
+</button>
+
+<div id="names"></div>
+
+        <input type="text" id="Fornavn" placeholder="Fornavn">
+        <input type="text" id="Mellomnavn" placeholder="Mellomnavn">
+        <input type="text" id="Etternavn" placeholder="Etternavn">
+
+
+<script>
+
+    function oppgave3() {
+        
+        let Fornavn = document.getElementById("Fornavn").value;
+        let Mellomnavn = document.getElementById("Mellomnavn").value;
+        let Etternavn = document.getElementById("Etternavn").value;
+        
+        document.getElementById("names").innerHTML = Fornavn + " " + Mellomnavn + " " + Etternavn;
+}
+
+</script>
+
+<h1>Oppgave 4</h1>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, neque!</p>
+
+<img src="Fish.gif" id="img">
+
+<button type="button" onclick="button1()"><div class="item10"><h3>pic1</h3>
+    </div></button>
+<br>
+
+<script>
+
+function button1(){
+    document.getElementById('img').src="Flag_of_Norway.svg";
+
+}
+    
+</script>
+
+<button type="button" onclick="button2()"><div class="item10"><h3>pic2</h3>
+    </div></button>
+<br>
+
+<script>
+
+function button2(){
+    document.getElementById('img').src="Flag_of_Denmark.svg";
+
+}
+    
+</script>
+<button type="button" onclick="button3()"><div class="item10"><h3>pic3</h3>
+    </div></button>
+<br>
+
+<script>
+
+function button3(){
+    document.getElementById('img').src="Flag_of_Sweden.svg";
+
+}
+    
+</script>
+
+
+-----
+
+
+
 
 <form>
 
@@ -101,6 +179,9 @@ console.log(a * b)
 
 
     
+<img src="Flag_of_Norway.svg" id="img1">
+<img src="Flag_of_Denmark.svg" id="img2">
+<img src="Flag_of_Sweden.svg" id="img3">
 
 </body>
 
