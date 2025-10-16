@@ -1,0 +1,234 @@
+:root {
+  --primary-bg-color: rgb(158, 75, 236); /* global scope */
+  --primary-color: white; 
+}
+
+@property --property {
+  syntax: "blue";
+  inherits: false;
+  initial-value: var(--scrollbar-track-color);
+}
+
+.submit {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: italic;
+  padding: 50px;
+  background-color: rgb(34, 33, 31);
+  color: aqua;
+  font-size: 32px;
+  border-style: ridge; border-width: 2px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 25px;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgb(214, 61, 105);
+  padding: 10px;
+  gap: 30px;
+  grid-template-areas: 
+  'item13 item7 item8 item9'
+  'item14 item4 item5 item6'
+  'item15 item1 item2 item3'
+  'item16 item10 item11 item12'
+  'item17 item18 item19 item12';
+  
+}
+.container > div {
+  
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.item1 {
+  display: grid;
+  grid-area: item1;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  
+}
+
+.item2 {
+  display: grid;
+  grid-area: item2;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+
+}
+
+.item3 {
+  display: grid;
+  grid-area: item3;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.item4 {
+  display: grid;
+  grid-area: item4;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.item5 {
+  display: grid;
+  grid-area: item5;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.item6 {
+  display: grid;
+  grid-area: item6;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.item7 {
+  display: grid;
+  grid-area: item7;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.item8 {
+  display: grid;
+  grid-area: item8;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.item9 {
+  display: grid;
+  grid-area: item9;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.item10 {
+  display: grid;
+  grid-area: item10;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.item11 {
+  display: grid;
+  grid-area: item11;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.item12 {
+  display: grid;
+  grid-area: item12;
+  border-radius: 25px;
+  color: white;
+  background-color: black;
+}
+
+.item13 {
+  display: grid;
+  grid-area: item13;
+  border-radius: 25px;
+  background-color: rgb(247, 22, 86)
+}
+
+.item14 {
+  display: grid;
+  grid-area: item14;
+  border-radius: 25px;
+  background-color: rgb(247, 22, 86)
+}
+
+.item15 {
+  display: grid;
+  grid-area: item15;
+  border-radius: 25px;
+  background-color: rgb(247, 22, 86)
+}
+
+.item15 {
+  display: grid;
+  grid-area: item15;
+  border-radius: 25px;
+  background-color: rgb(247, 22, 86)
+}
+
+.item16 {
+  display: grid;
+  grid-area: item16;
+  border-radius: 25px;
+  background-color: rgb(247, 22, 86)
+}
+
+.item17 {
+  display: grid;
+  grid-area: item17;
+  border-radius: 25px;
+  background-color: rgb(247, 22, 86)
+}
+
+.item18 {
+  display: grid;
+  grid-area: item18;
+  border-radius: 25px;
+  background-color: rgb(247, 22, 86)
+}
+
+.item19 {
+  display: grid;
+  grid-area: item19;
+  border-radius: 25px;
+  background-color: rgb(247, 22, 86)
+}
+
+
+
+
+/* LOL */ 
+
+ .item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover, .item7:hover, .item8:hover, .item9:hover, .item10:hover, .item11:hover, .item12:hover, .item13:hover, .item14:hover, .item15:hover, .item16:hover, .item17:hover, .item18:hover, .item19:hover, .item20:hover{
+  position: relative;
+  border-style: ridge; border-width: 2px;
+  border-color: red;
+  animation: enlarge 1s infinite;
+  animation-direction: alternate;
+  animation-timing-function: 
+}
+
+@keyframes enlarge{
+from {
+  /* */
+
+}
+
+to {
+  /* */
+  scale: 1.05;
+  box-shadow: 100px, 100px, 500px yellow;
+}
+
+}
+/*
+
+*/
+
+.item1:active, .item2:active, .item3:active, .item4:active, .item5:active, .item6:active, .item7:active, .item8:active, .item9:active, .item10:active, .item11:active, .item12:active, .item13:active, .item14:active, .item15:active, .item16:active, .item17:active, .item18:active, .item19:active {
+  border-style: ridge; border-width: 2px;
+  border-color: rgb(76, 0, 255);
+  border-width: 5px;
+}
+
+a:hover, h1:hover {
+  border-style: solid; border-width: 2px;
+  border-color: red;
+  
+}
+
