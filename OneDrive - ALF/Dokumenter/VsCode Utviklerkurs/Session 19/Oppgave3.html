@@ -1,0 +1,66 @@
+.<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="/Session 19/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<title>Javascript</title>
+
+<h1>17. October</h1>
+
+<link rel="stylesheet" href="style1.css">
+
+</head>
+
+
+<body>
+    
+        <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque at, quibusdam quos et officia ea!</p>
+        
+        <input type="text" id="text" placeholder="texxxt">
+        <textarea id="area">i
+
+            
+        </textarea>
+        
+        <br><br><br><label for="Velg">Velg</label><br>
+    <select id="valg">
+        <option value="Valg1">Valg1</option>
+        <option value="Valg2">Valg2</option>
+        <option value="Valg3">Valg3</option>
+        <option value="Valg4">Valg4</option>
+         </select>
+        
+        <input type="color" id="color">
+
+        <input type="date" id="date">
+
+        <button onclick="hentVerdier()";>Hent verdier</button>
+
+        <script>
+            function hentVerdier() {
+
+                let lorem = document.getElementById("lorem").value;
+                let text = document.getElementById("text").value;
+                let area = document.getElementById("area").value;
+                let valg = document.getElementById("valg").value;
+                let color = document.getElementById("color").value;
+                let date = document.getElementById("date").value;
+
+
+
+                document.getElementById("output").innerHTML = lorem + " " + text + " " + area + " " + valg + " " + color + " " + date;
+
+}
+        </script>
+
+<br><br>
+
+<div id="output">Output displayed here</div>
+
+
+
+</body>
+
+</html>
+
