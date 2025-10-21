@@ -3,18 +3,20 @@
 
         function hentVerdier() {
 
-            let number1 = document.getElementById("number1").value;
-            let a ;
-            a = number1 * 1.60934
+            let height = document.getElementById("number1").value;
             
-            let number2 = document.getElementById("number2").value;
-            let d ;
-            d = number2 / 1.60934
+            let weight = document.getElementById("number2").value;
+            
+            let a, b;
+            a = height*height
+            b = weight / a
 
 
 
-            document.getElementById("output1").innerHTML = a;
-            document.getElementById("output2").innerHTML = d ;
+            document.getElementById("output1").innerHTML = height;
+            document.getElementById("output2").innerHTML = weight;
+            document.getElementById("output3").innerHTML = b;
+            
             
 
 }
