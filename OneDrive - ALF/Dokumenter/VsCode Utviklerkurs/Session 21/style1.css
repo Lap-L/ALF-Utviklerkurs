@@ -1,0 +1,73 @@
+:root {
+  --primary-bg-color: rgb(158, 75, 236); /* global scope */
+  --primary-color: white; 
+}
+
+
+.verified {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: italic;
+  padding: 50px;
+  background-color: green;
+  color: aqua;
+  font-size: 32px;
+  border-style: ridge; border-width: 2px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 25px;
+
+}
+
+.refused {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: italic;
+  padding: 50px;
+  background-color: red;
+  color: aqua;
+  font-size: 32px;
+  border-style: ridge; border-width: 2px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 25px;
+
+}
+
+
+ /*.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover, .item7:hover, .item8:hover, .item9:hover, .item10:hover, .item11:hover, .item12:hover, .item13:hover, .item14:hover, .item15:hover, .item16:hover, .item17:hover, .item18:hover, .item19:hover, .item20:hover{
+  position: relative;
+  border-style: ridge; border-width: 2px;
+  border-color: red;
+  animation: enlarge 1s infinite;
+  animation-direction: alternate;
+  animation-timing-function: 
+}
+
+@keyframes enlarge{
+from {
+  /* */
+
+}
+
+to {
+  /* */
+  scale: 1.05;
+  box-shadow: 100px, 100px, 500px yellow;
+}
+
+}
+/*
+
+*/
+
+.item1:active, .item2:active, .item3:active, .item4:active, .item5:active, .item6:active, .item7:active, .item8:active, .item9:active, .item10:active, .item11:active, .item12:active, .item13:active, .item14:active, .item15:active, .item16:active, .item17:active, .item18:active, .item19:active {
+  border-style: ridge; border-width: 2px;
+  border-color: rgb(76, 0, 255);
+  border-width: 5px;
+}
+
+a:hover, h1:hover {
+  border-style: solid; border-width: 2px;
+  border-color: red;
+  
+}
+
