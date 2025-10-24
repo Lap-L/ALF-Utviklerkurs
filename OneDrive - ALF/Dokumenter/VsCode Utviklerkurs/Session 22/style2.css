@@ -40,16 +40,12 @@
 
 .container {
   display: grid;
-  grid-template-columns: 4 * 1fr;
+  grid-template-columns: 1fr 1fr;
   background-color: rgb(214, 150, 61);
   padding: 10px;
   gap: 30px;
   grid-template-areas: 
-  'item13 item7 item8 item9'
-  'item14 item4 item5 item6'
-  'item15 item1 item2 item3'
-  'item16 item10 item11 item12'
-  'item17 item18 item19 item12';
+  'item1 item2';
   
   /*width: 650px;
   border-radius: 25px;
@@ -87,132 +83,7 @@
 
 }
 
-.item3 {
-  display: grid;
-  grid-area: item3;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-}
 
-.item4 {
-  display: grid;
-  grid-area: item4;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-}
-
-.item5 {
-  display: grid;
-  grid-area: item5;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-}
-
-.item6 {
-  display: grid;
-  grid-area: item6;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-}
-
-.item7 {
-  display: grid;
-  grid-area: item7;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-}
-
-.item8 {
-  display: grid;
-  grid-area: item8;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-}
-
-.item9 {
-  display: grid;
-  grid-area: item9;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-}
-
-.item10 {
-  display: grid;
-  grid-area: item10;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-}
-
-.item11 {
-  display: grid;
-  grid-area: item11;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-}
-
-.item12 {
-  display: grid;
-  grid-area: item12;
-  border-radius: 25px;
-  color: white;
-  background-color: rgb(71, 206, 230);
-}
-
-.item13 {
-  display: grid;
-  grid-area: item13;
-  border-radius: 25px;
-  background-color: rgb(247, 22, 86)
-}
-
-.item14 {
-  display: grid;
-  grid-area: item14;
-  border-radius: 25px;
-  background-color: rgb(247, 22, 86)
-}
-
-.item15 {
-  display: grid;
-  grid-area: item15;
-  border-radius: 25px;
-  background-color: rgb(247, 22, 86)
-}
-
-.item15 {
-  display: grid;
-  grid-area: item15;
-  border-radius: 25px;
-  background-color: rgb(247, 22, 86)
-}
-
-.item16 {
-  display: grid;
-  grid-area: item16;
-  border-radius: 25px;
-  background-color: rgb(247, 22, 86)
-}
-
-.item17 {
-  display: grid;
-  grid-area: item17;
-  border-radius: 25px;
-  background-color: rgb(247, 22, 86)
-}
-
-.item18 {
-  display: grid;
-  grid-area: item18;
-  border-radius: 25px;
-  background-color: rgb(247, 22, 86)
-}
-
-.item19 {
-  display: grid;
-  grid-area: item19;
-  border-radius: 25px;
-  background-color: rgb(247, 22, 86)
-}
 
 
 
