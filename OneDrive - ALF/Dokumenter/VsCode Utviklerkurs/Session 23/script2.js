@@ -8,12 +8,9 @@
             
 
             if ( username.length > 0 ) {
-                document.getElementById("output1").innerText += "-" + username + "<br>";
+                document.getElementById("output1").innerText += "-" + username ;
                 
             } 
-
-            
-                
 
 }
   
