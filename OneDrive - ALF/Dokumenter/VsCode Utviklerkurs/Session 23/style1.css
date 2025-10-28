@@ -1,0 +1,38 @@
+
+
+
+.item1 {
+
+  
+  padding: 10px;
+  font-size: 30px;
+  
+  background-color: #f1f1f1;
+  
+}
+
+
+.item1:hover{
+  position: relative;
+  border-style: ridge; border-width: 2px;
+  border-color: red;
+  animation: enlarge 1s infinite;
+  animation-direction: alternate;
+  animation-timing-function: 
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.item1:active {
+  border-style: ridge; border-width: 2px;
+  border-color: rgb(76, 0, 255);
+  border-width: 5px;
+  animation: jump 0.05s;
+}
