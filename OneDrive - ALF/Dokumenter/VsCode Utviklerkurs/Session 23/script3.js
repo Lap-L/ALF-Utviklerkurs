@@ -13,10 +13,6 @@
             
                 document.getElementById("output1").innerHTML = output ;
                 
-           
-
-            
-                
-
+       
 }
   
