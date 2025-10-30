@@ -1,6 +1,5 @@
  function hentVerdier1() {
-
-            
+    
 
              if ( document.getElementById("big").checked) {
                 document.getElementById("output1").innerHTML = "Stor";
@@ -21,10 +20,11 @@
                 else {
                 document.getElementById("output2").innerHTML = "Taco";
 
-                if ( document.getElementById("1").checked) {
-                    document.getElementById("output3").innerHTML = "1";
-                    }   
+
+                if ( document.getElementById("one").checked) {
+                    document.getElementById("output3").innerHTML = "one";
+                    }
                     else {
-                    document.getElementById("output3").innerHTML = "2";
+                    document.getElementById("output3").innerHTML = "two";
 
   }   }  } 
