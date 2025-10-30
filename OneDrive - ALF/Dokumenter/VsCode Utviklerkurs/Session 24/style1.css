@@ -1,0 +1,35 @@
+:root {
+  --primary-bg-color: rgb(158, 75, 236); /* global scope */
+  --primary-color: white; 
+}
+
+
+.win {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: italic;
+  padding: 50px;
+  background-color: green;
+  color: aqua;
+  font-size: 32px;
+  border-style: ridge; border-width: 2px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 25px;
+
+}
+
+.loss {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: italic;
+  padding: 50px;
+  background-color: red;
+  color: aqua;
+  font-size: 32px;
+  border-style: ridge; border-width: 2px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 25px;
+
+}
+
+
