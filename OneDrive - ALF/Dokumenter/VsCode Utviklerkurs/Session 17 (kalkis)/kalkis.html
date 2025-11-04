@@ -18,51 +18,31 @@
 
 <p></p>
 
-<form>
-
-<input type="Submit" value="Calculate" class="submit" >
-
-</form>
+<!-- simple calculator display -->
+<div style="max-width:320px;margin:0 auto;text-align:center;">
+  <input id="display" type="text" value="" style="width:100%;font-size:24px;text-align:right;padding:8px;margin-bottom:8px;" readonly>
+</div>
 
 <div class="container">
-  <div class="item1"><h3>1</h3>
-    </div>
-    <div class="item2"><h3>2</h3>
-     </div>
-    <div class="item3"><h3>3</h3>
-     </div>
-    <div class="item4"><h3>4</h3>
-     </div>
-    <div class="item5"><h3>5</h3>
-     </div>
-    <div class="item6"><h3>6</h3>
-     </div>
-    <div class="item7"><h3>7</h3>
-    </div>
-    <div class="item8"><h3>8</h3>
-     </div>
-    <div class="item9"><h3>9</h3>
-     </div>
-     <div class="item10"><h3>0</h3>
-     </div>
-     <div class="item11"><h3>,</h3>
-     </div>
-     <div class="item12"><h3>=</h3>
-     </div>
-     <div class="item13"><h3>+</h3>
-     </div>
-     <div class="item14"><h3>-</h3>
-     </div>
-     <div class="item15"><h3>X</h3>
-     </div>
-     <div class="item16"><h3>/</h3>
-     </div>
-     <div class="item17"><h3>(</h3>
-     </div>
-     <div class="item18"><h3>)</h3>
-     </div>
-     <div class="item19"><h3>C</h3>
-     </div>
+  <div class="item1" onclick="press('1')"><h3>1</h3></div>
+  <div class="item2" onclick="press('2')"><h3>2</h3></div>
+  <div class="item3" onclick="press('3')"><h3>3</h3></div>
+  <div class="item4" onclick="press('4')"><h3>4</h3></div>
+  <div class="item5" onclick="press('5')"><h3>5</h3></div>
+  <div class="item6" onclick="press('6')"><h3>6</h3></div>
+  <div class="item7" onclick="press('7')"><h3>7</h3></div>
+  <div class="item8" onclick="press('8')"><h3>8</h3></div>
+  <div class="item9" onclick="press('9')"><h3>9</h3></div>
+  <div class="item10" onclick="press('0')"><h3>0</h3></div>
+  <div class="item11" onclick="press('.')"><h3>,</h3></div>
+  <div class="item12" onclick="calculate()"><h3>=</h3></div>
+  <div class="item13" onclick="press('+')"><h3>+</h3></div>
+  <div class="item14" onclick="press('-')"><h3>-</h3></div>
+  <div class="item15" onclick="press('*')"><h3>X</h3></div>
+  <div class="item16" onclick="press('/')"><h3>/</h3></div>
+  <div class="item17" onclick="press('(')"><h3>(</h3></div>
+  <div class="item18" onclick="press(')')"><h3>)</h3></div>
+  <div class="item19" onclick="clearDisplay()"><h3>C</h3></div>
      
      
     
@@ -72,7 +52,7 @@
         </div>
 
 
-    
+    <script src="script1.js"></script>
 
 </body>
 
