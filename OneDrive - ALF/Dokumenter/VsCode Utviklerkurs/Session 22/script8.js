@@ -1,17 +1,17 @@
 
-// ...existing code...
+
 function calc() {
     const input = parseFloat(document.getElementById("number1").value);
     const currency1 = document.getElementById("currency1").value;
     const currency2 = document.getElementById("currency2").value;
 
-    // Use fixed rates (replace with live rates if needed)
+    
     const rate = {
         usd_nok: 10,
         eur_nok: 11
     };
 
-    // Convert from currency1 to NOK
+    
     let valueInNok;
     if (currency1 === "usd") {
         valueInNok = input * rate.usd_nok;
@@ -24,7 +24,7 @@ function calc() {
         return;
     }
 
-    // Convert NOK to currency2
+    
     let result;
     if (currency2 === "nok") {
         result = valueInNok;
@@ -39,4 +39,3 @@ function calc() {
 
     document.getElementById("output1").innerText = result.toFixed(2);
 }
-// ...existing code...
