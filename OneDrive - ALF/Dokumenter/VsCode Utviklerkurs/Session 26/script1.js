@@ -3,9 +3,9 @@
         function hentVerdier() {
 
             
-            variable1 = Math.floor (Math.random() * 100 );
-            variable2 = Math.floor (Math.random() * 100 );
-            variable3 = Math.floor (Math.random() * 100 );
+            variable1 = Math.floor (Math.random() * 6 + 1);
+            variable2 = Math.floor (Math.random() * 6 + 1);
+            variable3 = Math.floor (Math.random() * 6 + 1);
 
             let ny01 = document.createElement("ul");
             ny01.setAttribute("id", "min01");
