@@ -1,20 +1,17 @@
 
 
-        function convert() {
-            let number1 = document.getElementById("number1").value;
+        function loop() {
+  
+            let partall = "";
+            let number1;
+            for (number1 = 0; number1 <= 100; number1++) {
+                if (number1 % 2 === 0) {
+                    partall += number1 + "<br>";
+                }
+            
+    
 
-                final = convert1(number1);
-
-
-                return document.getElementById("output1").innerHTML = "Prisen i NOK er: " + final;
+            document.getElementById("output1").innerHTML= partall;
         }
 
-         function convert1(number1) {  
-            let convert = number1 * 10 ;
-                gebyr = convert + 249;
-                moms = 0.25 * gebyr;
-                final = gebyr + moms;
-                return final;
-            }
-
-            
+    }
