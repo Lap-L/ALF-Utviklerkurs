@@ -10,7 +10,7 @@
             if (tall <= 1) {
                 erPrimtall = false;
             }
-            for (let i = 2; i <= Math.sqrt(tall); i++) {
+            for (let i = 2; i <= tall; i++) {
                 if (tall % i === 0) {
                     erPrimtall = false;
                     break;
