@@ -82,6 +82,10 @@
          
 		]	
 
+        Angrepspiller = "angrepspillere: Doffen Duck, Doffen2 Duck2"
+        Keeper = "Keepere: Donald Duck, Donald2 Duck2, Donald3 Duck3 "
+        Forsvarspiller = "Forsvarspillere: Ole Duck, Ole2 Duck2, Ole3 Duck3 "
+        Midtbanespiller = "Midtbanespillere: Dole Duck, Dole2 Duck2, Dole3 Duck3 "
         svar = ""
         svar2 = ""
         svar3 = ""
@@ -96,23 +100,26 @@
                  svar2 += "<br>" + "angrepspiller : " + Brann[i].fornavn + " " + Brann[i].etternavn + ". <br>" ;
         }
              
+
+        let ops = document.getElementById("ops").value;
+
         if ( ops === "Angrepspiller" ) {
                 Brann[i].posisjon === "Angrepspiller"
-                svar3 += "<br>" + Brann[i].fornavn + " " + Brann[i].etternavn + ". <br>" ;
+                svar3 = Angrepspiller + ". <br>" ;
                
             } else if ( ops === "Keeper" ) {
                 Brann[i].posisjon === "Keeper"
-                svar3 += "<br>" + Brann[i].fornavn + " " + Brann[i].etternavn + ". <br>" ;          
+                svar3 = Keeper + ". <br>" ;          
 
             }
             else if ( ops === "Forsvarspiller" ) {
                 Brann[i].posisjon === "Forsvarspiller"
-                svar3 += "<br>" + Brann[i].fornavn + " " + Brann[i].etternavn + ". <br>" ;      
+                svar3 = Forsvarspiller + ". <br>" ;      
 
             }
              else {
                 Brann[i].posisjon === "Midtbanespiller"
-                svar3 += "<br>" + Brann[i].fornavn + " " + Brann[i].etternavn + ". <br>" ;
+                svar3 = Midtbanespiller + ". <br>" ;
 
             }
 
@@ -120,7 +127,7 @@
 
          document.getElementById("output1").innerHTML += svar;
          document.getElementById("output2").innerHTML += svar2;
-         document.getElementById("output3").innerHTML += svar3;
+         document.getElementById("output3").innerHTML = svar3;
          
          
 
