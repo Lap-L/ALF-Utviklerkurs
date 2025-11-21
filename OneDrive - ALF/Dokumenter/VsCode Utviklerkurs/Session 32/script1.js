@@ -25,8 +25,7 @@ for(let i = 0; i < 10; i++) {
 }
 
 let anoFunk = function(tall) {
-    console.log(tall)
-    document.getElementById("output2").innerHTML += tall + "<br>"
+    document.getElementById("output2").innerHTML += tall.toFixed(2) + "<br>"
 }
 
 desimaltall.forEach(anoFunk)
