@@ -82,52 +82,53 @@
          
 		]	
 
-        Angrepspiller = "angrepspillere: Doffen Duck, Doffen2 Duck2"
-        Keeper = "Keepere: Donald Duck, Donald2 Duck2, Donald3 Duck3 "
-        Forsvarspiller = "Forsvarspillere: Ole Duck, Ole2 Duck2, Ole3 Duck3 "
-        Midtbanespiller = "Midtbanespillere: Dole Duck, Dole2 Duck2, Dole3 Duck3 "
-        svar = ""
-        svar2 = ""
-        svar3 = ""
+    
 
-        for(let i = 0; i < Brann.length; i++) {
+    // Tøm tidligere utskrift
+    document.getElementById("output1").innerHTML = "";
+    document.getElementById("output2").innerHTML = "";
+    document.getElementById("output3").innerHTML = "";
 
-            console.log(Brann[i].fornavn)
+    let svar = "";
+    let svar2 = "";
+    let kortUt = ""; // HTML for cards (c)
 
-            svar += "<br>" + Brann[i].fornavn + " " + Brann[i].etternavn + " har draktnummer " + Brann[i].draktnummer + ", og er " + Brann[i].posisjon + ". <br>" 
+    // Les dropdown-verdi EN GANG før loopen
+    let ops = document.getElementById("ops").value;
 
-            if (Brann[i].posisjon === "Angrepspiller") {
-                 svar2 += "<br>" + "angrepspiller : " + Brann[i].fornavn + " " + Brann[i].etternavn + ". <br>" ;
-        }
-             
+    for (let i = 0; i < Brann.length; i = i + 1) {
+      console.log(Brann[i].fornavn);
 
-        let ops = document.getElementById("ops").value;
+      // a) generell utskrift for hver spiller
+      svar = svar + "<br>" + Brann[i].fornavn + " " + Brann[i].etternavn + " har draktnummer " + Brann[i].draktnummer + ", og er " + Brann[i].posisjon + ". <br>";
 
-        if ( ops === "Angrepspiller" ) {
-                Brann[i].posisjon === "Angrepspiller"
-                svar3 = Angrepspiller + ". <br>" ;
-               
-            } else if ( ops === "Keeper" ) {
-                Brann[i].posisjon === "Keeper"
-                svar3 = Keeper + ". <br>" ;          
+      // b) samle angrepsspillere
+      if (Brann[i].posisjon === "Angrepspiller") {
+        svar2 = svar2 + "<br>" + "angrepsspiller : " + Brann[i].fornavn + " " + Brann[i].etternavn + ". <br>";
+      }
 
-            }
-            else if ( ops === "Forsvarspiller" ) {
-                Brann[i].posisjon === "Forsvarspiller"
-                svar3 = Forsvarspiller + ". <br>" ;      
+      // c) hvis posisjonen matcher dropdown-valget, bygg et kort for spilleren
+      if (Brann[i].posisjon === ops) {
+        // img src uses draktnummer => you can place images in images/player{nr}.png
+        var imgSrc = "images/player" + Brann[i].draktnummer + ".png";
+        kortUt = kortUt + '<div class="card">'
+          + '<img src="' + imgSrc + '" alt="Bilde av ' + Brann[i].fornavn + '" onerror="this.style.display=\'none\'">'
+          + '<h3>' + Brann[i].fornavn + ' ' + Brann[i].etternavn + '</h3>'
+          + '<p>Nr: ' + Brann[i].draktnummer + '</p>'
+          + '<p>Posisjon: ' + Brann[i].posisjon + '</p>'
+          + '</div>';
+      }
+    }
 
-            }
-             else {
-                Brann[i].posisjon === "Midtbanespiller"
-                svar3 = Midtbanespiller + ". <br>" ;
-
-            }
-
-        }
-
-         document.getElementById("output1").innerHTML += svar;
-         document.getElementById("output2").innerHTML += svar2;
-         document.getElementById("output3").innerHTML = svar3;
+    // Skriv alt til siden
+    document.getElementById("output1").innerHTML = svar;
+    document.getElementById("output2").innerHTML = svar2;
+    if (kortUt === "") {
+      document.getElementById("output3").innerHTML = "Ingen spillere funnet for: " + ops;
+    } else {
+      // wrap cards in a grid container
+      document.getElementById("output3").innerHTML = '<div class="card-grid">' + kortUt + '</div>';
+    }
          
          
 
