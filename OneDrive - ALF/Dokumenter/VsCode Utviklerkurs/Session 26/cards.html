@@ -1,0 +1,175 @@
+<html lang="no"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS DOM-oppgaver</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .murstein {
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      background-color: brown;
+      margin: 2px;
+    }
+    .kort {
+      border: 1px solid black;
+      width: 80px;
+      height: 120px;
+      background-color: white;
+      margin: 5px;
+      position: relative;
+      font-family: 'Georgia', serif;
+    }
+    .kort .topp,
+    .kort .bunn {
+      position: absolute;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .kort .topp {
+      top: 5px;
+      left: 5px;
+    }
+    .kort .bunn {
+      bottom: 5px;
+      right: 5px;
+      transform: rotate(180deg);
+    }
+    .kort .verdi {
+      font-size: 12px;
+    }
+    .kort .midt {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 32px;
+    }
+    .fargeboks {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      display: inline-block;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <h2>1. Legg til tall i liste</h2>
+  <ul id="tallListe"></ul>
+  <button onclick="leggTilTall()">Legg til tall</button>
+
+  <h2>2. Kommentarfelt</h2>
+  <textarea id="kommentarInput"></textarea>
+  <button onclick="leggTilKommentar()">Legg til kommentar</button>
+  <div id="kommentarer"></div>
+
+  <h2>3. Fargebokser</h2>
+  <input type="text" id="fargeInput" placeholder="f.eks. red eller #00ff00">
+  <button onclick="leggTilFargeboks()">Lag fargeboks</button>
+  <div id="fargeContainer"></div>
+
+  <h2>4. Kalkulator</h2>
+  <input type="number" id="tall1">
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" id="tall2">
+  <button onclick="regnUt()">Regn ut</button>
+  <div id="resultat"></div>
+
+  <h2>5. Trekk et kort</h2>
+  <button onclick="trekkKort()">Trekk et kort</button>
+  <div id="kortContainer"></div>
+
+  <h2>6. Bygg en mur</h2>
+  <button onclick="byggMur()">Legg til murstein</button>
+  <div id="murContainer"></div>
+
+  <script>
+    function leggTilTall() {
+      const ul = document.getElementById("tallListe");
+      const li = document.createElement("li");
+      li.textContent = Math.floor(Math.random() * 100) + 1;
+      ul.appendChild(li);
+    }
+
+    function leggTilKommentar() {
+      const tekst = document.getElementById("kommentarInput").value;
+      const p = document.createElement("p");
+      p.textContent = tekst;
+      document.getElementById("kommentarer").appendChild(p);
+    }
+
+    function leggTilFargeboks() {
+      const farge = document.getElementById("fargeInput").value;
+      const div = document.createElement("div");
+      div.className = "fargeboks";
+      div.style.backgroundColor = farge;
+      document.getElementById("fargeContainer").appendChild(div);
+    }
+
+    function regnUt() {
+      const t1 = Number(document.getElementById("tall1").value);
+      const t2 = Number(document.getElementById("tall2").value);
+      const op = document.getElementById("operator").value;
+      let res;
+      if (op === "+") res = t1 + t2;
+      else if (op === "-") res = t1 - t2;
+      else if (op === "*") res = t1 * t2;
+      else if (op === "/") res = t2 !== 0 ? t1 / t2 : "Feil: delt på null";
+
+      const p = document.createElement("p");
+      p.textContent = `Resultat: ${res}`;
+      document.getElementById("resultat").appendChild(p);
+    }
+
+    function trekkKort() {
+      const farger = ["♠️", "♥️", "♦️", "♣️"];
+      const navn = ["Spar", "Hjerter", "Ruter", "Kløver"];
+      const verdier = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+
+      const index = Math.floor(Math.random() * farger.length);
+      const symbol = farger[index];
+      const fargenavn = navn[index];
+      const verdi = verdier[Math.floor(Math.random() * verdier.length)];
+
+      const div = document.createElement("div");
+      div.className = "kort";
+
+      const topp = document.createElement("div");
+      topp.className = "topp";
+      topp.innerHTML = `<div class='verdi'>${verdi}</div><div>${symbol}</div>`;
+
+      const midt = document.createElement("div");
+      midt.className = "midt";
+      midt.textContent = symbol;
+
+      const bunn = document.createElement("div");
+      bunn.className = "bunn";
+      bunn.innerHTML = `<div class='verdi'>${verdi}</div><div>${symbol}</div>`;
+
+      div.appendChild(topp);
+      div.appendChild(midt);
+      div.appendChild(bunn);
+
+      document.getElementById("kortContainer").appendChild(div);
+    }
+
+    function byggMur() {
+      const murstein = document.createElement("div");
+      murstein.className = "murstein";
+      document.getElementById("murContainer").appendChild(murstein);
+    }
+  </script>
+
+
+</body></html>
