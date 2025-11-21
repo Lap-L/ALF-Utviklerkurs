@@ -68,7 +68,7 @@ let familieInfo = duck.map((person) => {
            person.adresse.postnr + " " + person.adresse.poststed + "<br><br>"
 })
 
-document.getElementById("oppgaveA").innerHTML = familieInfo
+document.getElementById("oppgaveA").innerHTML = familieInfo.join("")
 
 
 // b) Bruk filter() til å bare skrive ut etternavnet til de som heter Duck
@@ -81,7 +81,7 @@ let resultatB = duckEtternavn.map((person) => {
     return person.etternavn + "<br>"
 })
 
-document.getElementById("oppgaveB").innerHTML = resultatB
+document.getElementById("oppgaveB").innerHTML = resultatB.join("")
 
 
 // c) Benytt find() for å skrive ut navn og etternavn til en person som heter Ole
