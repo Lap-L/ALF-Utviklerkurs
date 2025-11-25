@@ -62,10 +62,10 @@ let duck = [
 
 // a) Bruk map() til å skrive ut info for hele familien
 
-let familieInfo = duck.map((person) => {
-    return person.fornavn + " " + person.etternavn + "<br>" +
-           person.adresse.gate + "<br>" +
-           person.adresse.postnr + " " + person.adresse.poststed + "<br><br>"
+let familieInfo = duck.map((duck) => {
+    return duck.fornavn + " " + duck.etternavn + "<br>" +
+           duck.adresse.gate + "<br>" +
+           duck.adresse.postnr + " " + duck.adresse.poststed + "<br><br>"
 })
 
 document.getElementById("oppgaveA").innerHTML = familieInfo.join("")
@@ -73,8 +73,8 @@ document.getElementById("oppgaveA").innerHTML = familieInfo.join("")
 
 // b) Bruk filter() til å bare skrive ut etternavnet til de som heter Duck
 
-let duckEtternavn = duck.filter((person) => {
-    return person.etternavn == "Duck"
+let duckEtternavn = duck.filter((duck) => {
+    return duck.etternavn == "Duck"
 })
 
 let resultatB = duckEtternavn.map((person) => {
