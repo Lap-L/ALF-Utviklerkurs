@@ -1,74 +1,138 @@
 // Oppgave 3
 
-let duck = [
-    {
-        fornavn: "Ole",
-        etternavn: "Duck",
-        alder: 7,
-        adresse: {
-            gate: "Andeby terasse 3",
-            postnr: 313,
-            poststed: "Andeby"
-        },
-        telefonnummer: {
-            privat: 313123,
-            jobb: 313223
-        }
+let people = [
+  {
+    id: 1,
+    name: "Alice",
+    age: 30,
+    occupation: "Engineer",
+    contact: {
+      email: "alice@example.com",
+      phone: "123-456-7890"
     },
-    {
-        fornavn: "Dole",
-        etternavn: "Duck",
-        alder: 7,
-        adresse: {
-            gate: "Andeby terasse 3",
-            postnr: 313,
-            poststed: "Andeby"
-        },
-        telefonnummer: {
-            privat: 313124,
-            jobb: 313224
-        }
-    },
-    {
-        fornavn: "Doffen",
-        etternavn: "Duck",
-        alder: 7,
-        adresse: {
-            gate: "Andeby terasse 3",
-            postnr: 313,
-            poststed: "Andeby"
-        },
-        telefonnummer: {
-            privat: 313125,
-            jobb: 313225
-        }
-    },
-    {
-        fornavn: "Donald",
-        etternavn: "Duck",
-        alder: 66,
-        adresse: {
-            gate: "Andeby terasse 3",
-            postnr: 313,
-            poststed: "Andeby"
-        },
-        telefonnummer: {
-            privat: 313126,
-            jobb: 313226
-        }
+    address: {
+      city: "New York",
+      country: "USA"
     }
-]
+  },
+  {
+    id: 2,
+    name: "Bob",
+    age: 25,
+    occupation: "Designer",
+    contact: {
+      email: "bob@example.com",
+      phone: "987-654-3210"
+    },
+    address: {
+      city: "Los Angeles",
+      country: "USA"
+    }
+  },
+  {
+    id: 3,
+    name: "Charlie",
+    age: 35,
+    occupation: "Teacher",
+    contact: {
+      email: "charlie@example.com",
+      phone: "555-555-5555"
+    },
+    address: {
+      city: "Chicago",
+      country: "USA"
+    }
+  },
+  {
+    id: 4,
+    name: "Diana",
+    age: 28,
+    occupation: "Doctor",
+    contact: {
+      email: "diana@example.com",
+      phone: "222-333-4444"
+    },
+    address: {
+      city: "Houston",
+      country: "USA"
+    }
+  }
+];
+
+
+let cars = [
+  {
+    id: 1,
+    make: "Toyota",
+    model: "Corolla",
+    year: 2020,
+    owner: {
+      name: "Alice",
+      id: 1
+    },
+    specs: {
+      color: "Blue",
+      engine: "1.8L",
+      transmission: "Automatic"
+    }
+  },
+  {
+    id: 2,
+    make: "Honda",
+    model: "Civic",
+    year: 2018,
+    owner: {
+      name: "Bob",
+      id: 2
+    },
+    specs: {
+      color: "Red",
+      engine: "2.0L",
+      transmission: "Manual"
+    }
+  },
+  {
+    id: 3,
+    make: "Ford",
+    model: "Focus",
+    year: 2021,
+    owner: {
+      name: "Charlie",
+      id: 3
+    },
+    specs: {
+      color: "White",
+      engine: "1.5L",
+      transmission: "Automatic"
+    }
+  },
+  {
+    id: 4,
+    make: "Tesla",
+    model: "Model 3",
+    year: 2022,
+    owner: {
+      name: "Diana",
+      id: 4
+    },
+    specs: {
+      color: "Black",
+      engine: "Electric",
+      transmission: "Automatic"
+    }
+  }
+];
 
 
 // a) Bruk map() til å skrive ut info for hele familien
 
-let familieInfo = duck.map((person) => {
-    return person.fornavn + " " + person.etternavn + "<br>" +
-           person.adresse.gate + "<br>" +
-           person.adresse.postnr + " " + person.adresse.poststed + "<br><br>"
+let peopleInfo = people.map((people) => {
+    return "id: " + people.id +"<br>" + " " + people.name + ", age " + people.age + "<br>" +
+           people.occupation + "<br>" + people.contact.email + "<br>" + 
+           people.address.city + ", " + people.address.country + "<br><br>"
 })
 
-document.getElementById("oppgaveA").innerHTML = familieInfo.join("")
+document.getElementById("oppgaveA").innerHTML = peopleInfo.join("")
 
 
 // b) Bruk filter() til å bare skrive ut etternavnet til de som heter Duck
@@ -110,42 +174,3 @@ let noenOver18 = duck.some((person) => {
 
 document.getElementById("oppgaveE").innerHTML = "Er noen over 18 år? " + noenOver18
 
-let selection = document.getElementById("oppgaveF").value;
-let dd = duck.filter((person) => {
-    return person.etternavn == selection
-})
-let ops = document.getElementById("ops").value;
-
-    for (let i = 0; i < Brann.length; i = i + 1) {
-      console.log(Brann[i].fornavn);
-
-      
-      svar = svar + "<br>" + Brann[i].fornavn + " " + Brann[i].etternavn + " har draktnummer " + Brann[i].draktnummer + ", og er " + Brann[i].posisjon + ". <br>";
-
-      
-      if (Brann[i].posisjon === "Angrepspiller") {
-        svar2 = svar2 + "<br>" + "angrepsspiller : " + Brann[i].fornavn + " " + Brann[i].etternavn + ". <br>";
-      }
-
-      
-      if (Brann[i].posisjon === ops) {
-        
-        var imgSrc = "images/player" + Brann[i].draktnummer + ".png";
-        kortUt = kortUt + '<div class="card">'
-          + '<img src="' + imgSrc + '" alt="Bilde av ' + Brann[i].fornavn + '" onerror="this.style.display=\'none\'">'
-          + '<h3>' + Brann[i].fornavn + ' ' + Brann[i].etternavn + '</h3>'
-          + '<p>Nr: ' + Brann[i].draktnummer + '</p>'
-          + '<p>Posisjon: ' + Brann[i].posisjon + '</p>'
-          + '</div>';
-      }
-    }
-
-    
-    document.getElementById("output1").innerHTML = svar;
-    document.getElementById("output2").innerHTML = svar2;
-    if (kortUt === "") {
-      document.getElementById("output3").innerHTML = "Ingen spillere funnet for: " + ops;
-    } else {
-      
-      document.getElementById("output3").innerHTML = '<div class="card-grid">' + kortUt + '</div>';
-    }

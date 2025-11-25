@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<style>
+    .card-grid { display:flex; flex-wrap:wrap; gap:12px; margin-top:8px }
+    .card { border:1px solid #ccc; border-radius:6px; padding:8px; width:200px; box-shadow:1px 1px 4px rgba(0,0,0,0.05); }
+    .card img { width:100%; height:120px; object-fit:cover; border-radius:4px; background:#f0f0f0 }
+    .card h3 { margin:8px 0 4px 0; font-size:1.05em }
+    .card p { margin:4px 0; font-size:0.95em }
+    </style>
 	<title>Session 32 - Oppgave 3</title>
 </head>
 <body>
-	<h1>Session 32 - Oppgave 3</h1>
+	<h1>November 25 Oppgave 1</h1>
 	
-	<h2>a) map() - Hele familien</h2>
+	<h2>a) map() - person info</h2>
 	<div id="oppgaveA"></div>
+    <button onclick="oppgave1a()">Oppgave A</button>
 
 	<h2>b) filter() - Etternavn Duck</h2>
 	<div id="oppgaveB"></div>
@@ -21,6 +28,14 @@
 
 	<h2>e) some() - Er noen over 18 år?</h2>
 	<div id="oppgaveE"></div>
+
+	<hr>
+	<h2>Person-kort (cards)</h2>
+	<div id="outputPersons" class="card-grid"></div>
+
+	<h2>Biler (cards)</h2>
+	<div id="outputCars" class="card-grid"></div>
+	<div id="outputCarsExtras"></div>
 
     <label for="Operations">Posisjon:</label>
 <select id="ops" name="list" form="opform">
