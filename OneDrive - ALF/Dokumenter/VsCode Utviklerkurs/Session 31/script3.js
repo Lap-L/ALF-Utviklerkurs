@@ -84,32 +84,32 @@
 
     
 
-    // Tøm tidligere utskrift
+    
     document.getElementById("output1").innerHTML = "";
     document.getElementById("output2").innerHTML = "";
     document.getElementById("output3").innerHTML = "";
 
     let svar = "";
     let svar2 = "";
-    let kortUt = ""; // HTML for cards (c)
+    let kortUt = ""; 
 
-    // Les dropdown-verdi EN GANG før loopen
+    
     let ops = document.getElementById("ops").value;
 
     for (let i = 0; i < Brann.length; i = i + 1) {
       console.log(Brann[i].fornavn);
 
-      // a) generell utskrift for hver spiller
+      
       svar = svar + "<br>" + Brann[i].fornavn + " " + Brann[i].etternavn + " har draktnummer " + Brann[i].draktnummer + ", og er " + Brann[i].posisjon + ". <br>";
 
-      // b) samle angrepsspillere
+      
       if (Brann[i].posisjon === "Angrepspiller") {
         svar2 = svar2 + "<br>" + "angrepsspiller : " + Brann[i].fornavn + " " + Brann[i].etternavn + ". <br>";
       }
 
-      // c) hvis posisjonen matcher dropdown-valget, bygg et kort for spilleren
+      
       if (Brann[i].posisjon === ops) {
-        // img src uses draktnummer => you can place images in images/player{nr}.png
+        
         var imgSrc = "images/player" + Brann[i].draktnummer + ".png";
         kortUt = kortUt + '<div class="card">'
           + '<img src="' + imgSrc + '" alt="Bilde av ' + Brann[i].fornavn + '" onerror="this.style.display=\'none\'">'
@@ -120,13 +120,13 @@
       }
     }
 
-    // Skriv alt til siden
+    
     document.getElementById("output1").innerHTML = svar;
     document.getElementById("output2").innerHTML = svar2;
     if (kortUt === "") {
       document.getElementById("output3").innerHTML = "Ingen spillere funnet for: " + ops;
     } else {
-      // wrap cards in a grid container
+      
       document.getElementById("output3").innerHTML = '<div class="card-grid">' + kortUt + '</div>';
     }
          
