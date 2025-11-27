@@ -24,7 +24,7 @@
 }
 
 
-.container > div {
+#output1 {
   
   border: 1px solid black;
   padding: 10px;

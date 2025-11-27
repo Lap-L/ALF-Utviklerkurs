@@ -132,7 +132,8 @@ let peopleInfo = people.map((people) => {
            people.address.city + ", " + people.address.country + "<br><br>"
 })
 
-document.getElementById("oppgaveA").innerHTML = peopleInfo.join("")
+
+document.getElementById("output1").innerHTML = peopleInfo.join("")
 
 
 // b) Bruk filter() til å bare skrive ut etternavnet til de som heter Duck
