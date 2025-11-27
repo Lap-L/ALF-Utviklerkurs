@@ -1,0 +1,7 @@
+[
+  { "fornavn": "Ola", "etternavn": "Nordmann", "alder": 30 },
+  { "fornavn": "Kari", "etternavn": "Nordmann", "alder": 28 },
+  { "fornavn": "Per", "etternavn": "Hansen", "alder": 40 },
+  { "fornavn": "Line", "etternavn": "Jensen", "alder": 22 },
+  { "fornavn": "Marius", "etternavn": "Larsen", "alder": 35 }
+]
