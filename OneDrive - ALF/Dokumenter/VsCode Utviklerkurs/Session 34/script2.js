@@ -21,7 +21,7 @@ function oppstart() {
 		document.body.style.backgroundColor = saved;
 		if (fargeSelect) fargeSelect.value = saved;
 	}
-	// wire event handler
+	
 	if (fargeSelect) fargeSelect.onchange = velgFarge;
 }
 
