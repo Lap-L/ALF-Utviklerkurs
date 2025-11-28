@@ -1,7 +1,7 @@
 [
-  { "land": "Norge", "hovedstad": "Oslo", "befolkning": "5.5 million", "flagg": "https://flagcdn.com/w320/no.png" },
-  { "land": "Sverige", "hovedstad": "Stockholm", "befolkning": "10.5 million", "flagg": "https://flagcdn.com/w320/se.png" },
-  { "land": "Danmark", "hovedstad": "København", "befolkning": "5.9 million", "flagg": "https://flagcdn.com/w320/dk.png" },
-  { "land": "Tyskland", "hovedstad": "Berlin", "befolkning": "83.2 million", "flagg": "https://flagcdn.com/w320/de.png" },
-  { "land": "England", "hovedstad": "London", "befolkning": "56.5 million", "flagg": "https://flagcdn.com/w320/gb.png" }
+  { "land": "Norge", "hovedstad": "Oslo", "befolkning": "5.5 ", "flagg": "https://flagcdn.com/w320/no.png" },
+  { "land": "Sverige", "hovedstad": "Stockholm", "befolkning": "10.5 ", "flagg": "https://flagcdn.com/w320/se.png" },
+  { "land": "Danmark", "hovedstad": "København", "befolkning": "5.9 ", "flagg": "https://flagcdn.com/w320/dk.png" },
+  { "land": "Tyskland", "hovedstad": "Berlin", "befolkning": "83.2 ", "flagg": "https://flagcdn.com/w320/de.png" },
+  { "land": "England", "hovedstad": "London", "befolkning": "56.5 ", "flagg": "https://flagcdn.com/w320/gb.png" }
 ]

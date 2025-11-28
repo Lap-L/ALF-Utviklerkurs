@@ -3,9 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<title>Session 35 - Oppgave 2</title>
+	<style>
+		.card { border: 1px solid #ccc; padding: 15px; margin: 10px; border-radius: 5px; }
+		.card h3 { margin-top: 0; color: #333; }
+		.email { color: #666; font-size: 0.9em; }
+	</style>
 </head>
 <body>
-	<h1>Session 35 - Oppgave 2</h1>
+	<h1>28. November, Async - Oppgave 2</h1>
+	
+	<button id="loadJson" onclick="fetchComments()">Last Kommentarer</button>
+	<h2>Oppgave 2a - Comments</h2>
+	<div id="commentsOutput"></div>
+	
+	<hr>
+	<button id="loadAlbums" onclick="fetchAlbums()">Last Albums</button>
+	<h2>Oppgave 2b - Albums</h2>
+	<div id="albumsOutput"></div>
+	
 	<script src="script2.js"></script>
 </body>
 </html>
